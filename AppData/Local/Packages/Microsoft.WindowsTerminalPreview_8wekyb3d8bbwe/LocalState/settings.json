@@ -1,0 +1,186 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema-preview",
+    "actions": [
+        {
+            "command": "unbound",
+            "keys": "ctrl+alt+1"
+        },
+        {
+            "command": {
+                "action": "switchToTab",
+                "index": 0
+            },
+            "id": "User.switchToTab.D3F0B923",
+            "keys": "ctrl+1"
+        },
+        {
+            "command": {
+                "action": "copy",
+                "singleLine": false
+            },
+            "id": "User.copy.644BA8F2",
+            "keys": "ctrl+c"
+        },
+        {
+            "command": "paste",
+            "id": "User.paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "id": "User.splitPane.A6751878",
+            "keys": "alt+shift+d"
+        },
+        {
+            "command": "find",
+            "id": "User.find",
+            "keys": "ctrl+shift+f"
+        }
+    ],
+    "alwaysOnTop": true,
+    "autoHideWindow": false,
+    "centerOnLaunch": true,
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+    "newTabMenu": [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "profiles": {
+        "defaults": {
+            "adjustIndistinguishableColors": "indexed",
+            "closeOnExit": "graceful",
+            "font": {
+                "face": "Cascadia Code PL"
+            },
+            "intenseTextStyle": "all",
+            "opacity": 75,
+            "useAcrylic": false,
+            "colorScheme": "Elementary"
+        },
+        "list": [
+            {
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "Command Prompt"
+            },
+            {
+                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+                "hidden": false,
+                "name": "PowerShell",
+                "source": "Windows.Terminal.PowershellCore"
+            },
+            {
+                "guid": "{8ab8e6f6-35c6-5b46-8419-3e1568105476}",
+                "hidden": false,
+                "name": "podman-machine-default",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": true,
+                "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                "guid": "{897bfd96-9be5-5011-9dcd-7a97b456ea84}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{cb4f4b45-0412-53de-9796-faa767deb54c}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{4d17908f-9e8a-5a43-8336-a034816b1de5}",
+                "hidden": true,
+                "name": "Developer Command Prompt for VS 2019",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{7183e1da-8740-5e1c-ab2f-f2d4941abe66}",
+                "hidden": true,
+                "name": "Developer PowerShell for VS 2019",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{16208362-94fc-5b1f-a491-5b2624d5ab56}",
+                "hidden": true,
+                "name": "Visual Studio Debug Console",
+                "source": "VSDebugConsole"
+            },
+            {
+                "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+                "hidden": false,
+                "name": "Git Bash",
+                "source": "Git"
+            },
+            {
+                "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
+            },
+            {
+                "commandline": "lazygit.exe",
+                "guid": "{f9a0f221-d196-4e02-8b67-f3f2b75a86c3}",
+                "hidden": false,
+                "name": "Lazygit",
+                "startingDirectory": "%USERPROFILE%"
+            }
+        ]
+    },
+    "schemes": [
+        {
+            "name": "Elementary",
+            "black": "#242424",
+            "red": "#d71c15",
+            "green": "#5aa513",
+            "yellow": "#fdb40c",
+            "blue": "#063b8c",
+            "purple": "#e40038",
+            "cyan": "#2595e1",
+            "white": "#efefef",
+            "brightBlack": "#4b4b4b",
+            "brightRed": "#fc1c18",
+            "brightGreen": "#6bc219",
+            "brightYellow": "#fec80e",
+            "brightBlue": "#0955ff",
+            "brightPurple": "#fb0050",
+            "brightCyan": "#3ea8fc",
+            "brightWhite": "#8c00ec",
+            "background": "#181818",
+            "foreground": "#efefef",
+            "selectionBackground": "#b5d5ff",
+            "cursorColor": "#bbbbbb"
+        }
+    ],
+    "startOnUserLogin": true,
+    "theme": "system",
+    "themes": [],
+    "useAcrylicInTabRow": true,
+    "windowingBehavior": "useAnyExisting"
+}
