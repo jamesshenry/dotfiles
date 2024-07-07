@@ -1,4 +1,6 @@
-{{ $email  := promptStringOnce . "email" "Email address" }}
+[cd]
+command = pwsh
 
-[data]
-    email = {{ $email | quote }}
+[git]
+autoCommit = true
+autoPush = true
