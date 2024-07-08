@@ -1,4 +1,4 @@
-Write-Host "Installing ripgrep"
+Write-Host "Installing ripgrep" -ForegroundColor Yellow
 [Environment]::SetEnvironmentVariable('RIPGREP_CONFIG_PATH', "$HOME\.config\ripgrep\.ripgreprc", 'User')
 
 if ($IsWindows) {
@@ -10,4 +10,3 @@ elseif ($IsLinux || $IsMacOS) {
     }
     brew install ripgrep
 }
-
