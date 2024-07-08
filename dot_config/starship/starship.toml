@@ -1,0 +1,7 @@
+[sudo]
+style = 'bold green'
+allow_windows = true
+symbol = '🧙 '
+
+[os]
+disabled = true
