@@ -1,13 +1,15 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema-preview",
-    "actions": [
+    "actions": 
+    [
         {
             "command": "unbound",
             "keys": "ctrl+alt+1"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "switchToTab",
                 "index": 0
             },
@@ -15,7 +17,8 @@
             "keys": "ctrl+1"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "copy",
                 "singleLine": false
             },
@@ -28,7 +31,8 @@
             "keys": "ctrl+v"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
@@ -43,29 +47,35 @@
         }
     ],
     "alwaysOnTop": true,
+    "alwaysShowNotificationIcon": true,
     "autoHideWindow": false,
     "centerOnLaunch": true,
     "copyFormatting": "all",
     "copyOnSelect": true,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-    "newTabMenu": [
+    "newTabMenu": 
+    [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles": {
-        "defaults": {
+    "profiles": 
+    {
+        "defaults": 
+        {
             "adjustIndistinguishableColors": "indexed",
             "closeOnExit": "graceful",
-            "font": {
+            "colorScheme": "Elementary",
+            "font": 
+            {
                 "face": "Cascadia Code PL"
             },
             "intenseTextStyle": "all",
             "opacity": 75,
-            "useAcrylic": false,
-            "colorScheme": "Elementary"
+            "useAcrylic": false
         },
-        "list": [
+        "list": 
+        [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -153,29 +163,30 @@
             }
         ]
     },
-    "schemes": [
+    "schemes": 
+    [
         {
-            "name": "Elementary",
-            "black": "#242424",
-            "red": "#d71c15",
-            "green": "#5aa513",
-            "yellow": "#fdb40c",
-            "blue": "#063b8c",
-            "purple": "#e40038",
-            "cyan": "#2595e1",
-            "white": "#efefef",
-            "brightBlack": "#4b4b4b",
-            "brightRed": "#fc1c18",
-            "brightGreen": "#6bc219",
-            "brightYellow": "#fec80e",
-            "brightBlue": "#0955ff",
-            "brightPurple": "#fb0050",
-            "brightCyan": "#3ea8fc",
-            "brightWhite": "#8c00ec",
             "background": "#181818",
-            "foreground": "#efefef",
-            "selectionBackground": "#b5d5ff",
-            "cursorColor": "#bbbbbb"
+            "black": "#242424",
+            "blue": "#063B8C",
+            "brightBlack": "#4B4B4B",
+            "brightBlue": "#0955FF",
+            "brightCyan": "#3EA8FC",
+            "brightGreen": "#6BC219",
+            "brightPurple": "#FB0050",
+            "brightRed": "#FC1C18",
+            "brightWhite": "#8C00EC",
+            "brightYellow": "#FEC80E",
+            "cursorColor": "#BBBBBB",
+            "cyan": "#2595E1",
+            "foreground": "#EFEFEF",
+            "green": "#5AA513",
+            "name": "Elementary",
+            "purple": "#E40038",
+            "red": "#D71C15",
+            "selectionBackground": "#B5D5FF",
+            "white": "#EFEFEF",
+            "yellow": "#FDB40C"
         }
     ],
     "startOnUserLogin": true,
