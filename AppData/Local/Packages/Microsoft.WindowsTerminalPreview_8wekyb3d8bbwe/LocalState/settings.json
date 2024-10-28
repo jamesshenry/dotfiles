@@ -1,49 +1,36 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema-preview",
-    "actions": 
-    [
+    "actions": [
         {
-            "command": "unbound",
-            "keys": "ctrl+alt+1"
+            "command": "paste",
+            "id": "User.paste"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "switchToTab",
                 "index": 0
             },
-            "id": "User.switchToTab.D3F0B923",
-            "keys": "ctrl+1"
+            "id": "User.switchToTab.D3F0B923"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "copy",
                 "singleLine": false
             },
-            "id": "User.copy.644BA8F2",
-            "keys": "ctrl+c"
+            "id": "User.copy.644BA8F2"
         },
         {
-            "command": "paste",
-            "id": "User.paste",
-            "keys": "ctrl+v"
+            "command": "find",
+            "id": "User.find"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
             },
-            "id": "User.splitPane.A6751878",
-            "keys": "alt+shift+d"
-        },
-        {
-            "command": "find",
-            "id": "User.find",
-            "keys": "ctrl+shift+f"
+            "id": "User.splitPane.A6751878"
         }
     ],
     "alwaysOnTop": true,
@@ -53,29 +40,33 @@
     "copyFormatting": "all",
     "copyOnSelect": true,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-    "newTabMenu": 
-    [
+    "keybindings": [],
+    "minimizeToNotificationArea": true,
+    "newTabMenu": [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles": 
-    {
-        "defaults": 
-        {
+    "profiles": {
+        "defaults": {
             "adjustIndistinguishableColors": "indexed",
-            "closeOnExit": "graceful",
-            "colorScheme": "Elementary",
-            "font": 
-            {
-                "face": "Cascadia Code PL"
+            "backgroundImageAlignment": "bottomRight",
+            "backgroundImageStretchMode": "none",
+            "closeOnExit": "automatic",
+            "colorScheme": {
+                "dark": "Elementary",
+                "light": "Catppuccin Latte"
+            },
+            "font": {
+                "axes": {},
+                "face": "Cascadia Code NF",
+                "size": 14
             },
             "intenseTextStyle": "all",
-            "opacity": 75,
+            "opacity": 80,
             "useAcrylic": false
         },
-        "list": 
-        [
+        "list": [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -160,11 +151,41 @@
                 "hidden": false,
                 "name": "Lazygit",
                 "startingDirectory": "%USERPROFILE%"
+            },
+            {
+                "commandline": "\"C:\\Program Files\\PowerShell\\7\\pwsh.exe\" -ExecutionPolicy ByPass -NoExit -Command \"& 'C:\\Users\\jhenry\\AppData\\Local\\miniconda3\\shell\\condabin\\conda-hook.ps1' ; conda activate 'C:\\Users\\jhenry\\AppData\\Local\\miniconda3' \"",
+                "guid": "{dc2832e1-6ee0-44a1-9862-eb1ef7c12fec}",
+                "hidden": false,
+                "icon": "ms-appx:///ProfileIcons/pwsh.png",
+                "name": "Anaconda Pwsh (miniconda3)",
+                "startingDirectory": "%USERPROFILE%"
             }
         ]
     },
-    "schemes": 
-    [
+    "schemes": [
+        {
+            "background": "#F2F2F2",
+            "black": "#5C5F77",
+            "blue": "#1E66F5",
+            "brightBlack": "#6C6F85",
+            "brightBlue": "#1E66F5",
+            "brightCyan": "#179299",
+            "brightGreen": "#40A02B",
+            "brightPurple": "#EA76CB",
+            "brightRed": "#D20F39",
+            "brightWhite": "#BCC0CC",
+            "brightYellow": "#DF8E1D",
+            "cursorColor": "#DC8A78",
+            "cyan": "#179299",
+            "foreground": "#4C4F69",
+            "green": "#40A02B",
+            "name": "Catppuccin Latte",
+            "purple": "#EA76CB",
+            "red": "#D20F39",
+            "selectionBackground": "#ACB0BE",
+            "white": "#ACB0BE",
+            "yellow": "#DF8E1D"
+        },
         {
             "background": "#181818",
             "black": "#242424",
