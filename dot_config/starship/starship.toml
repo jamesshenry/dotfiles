@@ -10,4 +10,5 @@ disabled = true
 
 [cmd_duration]
 min_time = 0
-format = 'underwent [$duration](bold yellow)'
+show_milliseconds = true
+format = 'took [$duration](bold yellow)'
