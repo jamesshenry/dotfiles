@@ -3,7 +3,7 @@
     "$schema": "https://aka.ms/terminal-profiles-schema-preview",
     "actions": [
         {
-            "id": "unbound"
+            "id": "unbound", "command" :"unbound"
         },
         {
             "command": {
@@ -40,11 +40,16 @@
     "alwaysShowNotificationIcon": true,
     "autoHideWindow": false,
     "centerOnLaunch": true,
-    "compatibility.allowHeadless": true,
     "confirmCloseAllTabs": false,
     "copyFormatting": "all",
     "copyOnSelect": true,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+    "startOnUserLogin": true,
+    "theme": "system",
+    "themes": [],
+    "useAcrylicInTabRow": true,
+    "windowingBehavior": "useAnyExisting",
+    "compatibility.allowHeadless": false,
     "keybindings": [
         {
             "id": "unbound",
@@ -70,7 +75,7 @@
             "font": {
                 "axes": {},
                 "face": "Cascadia Code NF",
-                "size": 11
+                "size": 12
             },
             "intenseTextStyle": "all",
             "opacity": 80,
@@ -187,10 +192,5 @@
             "white": "#EFEFEF",
             "yellow": "#FDB40C"
         }
-    ],
-    "startOnUserLogin": true,
-    "theme": "system",
-    "themes": [],
-    "useAcrylicInTabRow": true,
-    "windowingBehavior": "useAnyExisting"
+    ]
 }
