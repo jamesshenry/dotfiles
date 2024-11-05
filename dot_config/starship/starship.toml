@@ -5,3 +5,10 @@ symbol = '🧙 '
 
 [os]
 disabled = true
+
+# ~/.config/starship.toml
+
+[cmd_duration]
+min_time = 0
+show_milliseconds = true
+format = 'took [$duration](bold yellow)'
