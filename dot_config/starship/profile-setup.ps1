@@ -9,7 +9,9 @@ function Invoke-Starship-PreCommand {
     if ($loc.Provider.Name -eq "FileSystem") {
         $prompt += "$([char]27)]9;9;`"$($loc.ProviderPath)`"$([char]27)\"
     }
+    $dir = $pwd.Path.Split('\')[-1]
     $host.ui.Write($prompt)
+    $host.UI.RawUI.WindowTitle = "📂 = $dir `a"
 }
 
 function Invoke-Starship-TransientFunction {
