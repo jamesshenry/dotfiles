@@ -1,12 +1,11 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema-preview",
-    "actions": [
+    "actions": 
+    [
         {
-            "id": "unbound", "command" :"unbound"
-        },
-        {
-            "command": {
+            "command": 
+            {
                 "action": "switchToTab",
                 "index": 0
             },
@@ -17,14 +16,16 @@
             "id": "User.paste"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "copy",
                 "singleLine": false
             },
             "id": "User.copy.644BA8F2"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
@@ -36,43 +37,46 @@
             "id": "User.find"
         }
     ],
-    "alwaysOnTop": true,
+    "alwaysOnTop": false,
     "alwaysShowNotificationIcon": true,
     "autoHideWindow": false,
     "centerOnLaunch": true,
+    "compatibility.allowHeadless": false,
     "confirmCloseAllTabs": false,
     "copyFormatting": "all",
     "copyOnSelect": true,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-    "startOnUserLogin": true,
-    "theme": "system",
-    "themes": [],
-    "useAcrylicInTabRow": true,
-    "windowingBehavior": "useAnyExisting",
-    "compatibility.allowHeadless": false,
-    "keybindings": [
+    "initialCols": 130,
+    "initialRows": 40,
+    "keybindings": 
+    [
         {
             "id": "unbound",
             "keys": "win+`"
         }
     ],
     "minimizeToNotificationArea": true,
-    "newTabMenu": [
+    "newTabMenu": 
+    [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles": {
-        "defaults": {
+    "profiles": 
+    {
+        "defaults": 
+        {
             "adjustIndistinguishableColors": "indexed",
             "backgroundImageAlignment": "bottomRight",
             "backgroundImageStretchMode": "none",
             "closeOnExit": "automatic",
-            "colorScheme": {
+            "colorScheme": 
+            {
                 "dark": "Elementary",
                 "light": "Catppuccin Latte"
             },
-            "font": {
+            "font": 
+            {
                 "axes": {},
                 "face": "Cascadia Code NF",
                 "size": 12
@@ -81,7 +85,8 @@
             "opacity": 80,
             "useAcrylic": false
         },
-        "list": [
+        "list": 
+        [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -130,22 +135,11 @@
                 "hidden": false,
                 "name": "Lazygit",
                 "startingDirectory": "%USERPROFILE%"
-            },
-            {
-                "guid": "{110bdef4-8a94-551e-b183-7a7386959800}",
-                "hidden": false,
-                "name": "Developer Command Prompt for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{5590a71b-c6e6-5423-9cbb-2bf2aa204c9b}",
-                "hidden": false,
-                "name": "Developer PowerShell for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },
-    "schemes": [
+    "schemes": 
+    [
         {
             "background": "#F2F2F2",
             "black": "#5C5F77",
@@ -192,5 +186,10 @@
             "white": "#EFEFEF",
             "yellow": "#FDB40C"
         }
-    ]
+    ],
+    "startOnUserLogin": true,
+    "theme": "system",
+    "themes": [],
+    "useAcrylicInTabRow": true,
+    "windowingBehavior": "useAnyExisting"
 }
