@@ -15,7 +15,7 @@ function Invoke-Starship-PreCommand {
 }
 
 function Invoke-Starship-TransientFunction {
-    &starship module character
+    &starship module dotnet
 }
 
 Invoke-Expression (&starship init powershell)
