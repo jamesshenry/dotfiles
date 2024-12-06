@@ -236,6 +236,8 @@ _pkginfo.txt
 *.[Cc]ache
 # but keep track of directories ending in .cache
 !?*.[Cc]ache/
+# but discard directories ending in cache
+*[Cc]ache/
 
 # Others
 ClientBin/
@@ -484,3 +486,4 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+cache
