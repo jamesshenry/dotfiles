@@ -1,0 +1,13 @@
+theme = "onedark"
+
+[editor]
+line-number = "relative"
+mouse = false
+scrolloff = 15
+color-modes = true
+default-line-ending = lf
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
