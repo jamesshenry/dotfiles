@@ -9,10 +9,10 @@
       "bottom": 40
     }
   },
-  "font_family": "JetBrains Mono",
+  "font_family": "Cascadia Code NF",
   "theme": {
     "palette": "Base16",
-    "name": "Ashes",
+    "name": "CatppuccinFrappe",
     "accent": "Base0D"
   },
   "left_widgets": [
@@ -23,7 +23,8 @@
           "hide_empty_workspaces": false
         },
         "layout": {
-          "enable": true
+          "enable": true,
+          "display": "IconAndText"
         },
         "focused_window": {
           "enable": true,
@@ -40,7 +41,7 @@
     },
     {
       "Storage": {
-        "enable": true
+        "enable": false
       }
     },
     {
