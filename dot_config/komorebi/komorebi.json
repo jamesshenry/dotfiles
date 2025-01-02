@@ -9,7 +9,7 @@
   "window_hiding_behaviour": "Cloak",
   "cross_monitor_move_behaviour": "Insert",
   "default_workspace_padding": 20,
-  "default_container_padding": 20,
+  "default_container_padding": 15,
   "border": true,
   "border_width": 6,
   "border_offset": -1,
