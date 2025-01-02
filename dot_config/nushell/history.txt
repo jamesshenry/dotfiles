@@ -1,0 +1,53 @@
+ping logos
+get-command
+zig
+rs
+rust
+cargo
+cls
+config
+config nu
+$env
+snowagent
+cd 'C:\Program Files\Snow Software\Inventory\Agent\'
+ls
+snowagent.exe
+exit
+sudo
+cd
+cd .config\
+ls
+mkdir nushell
+cd nushell\
+ls
+^ls
+dir
+^dir
+^Get-ChildItem
+chezmoi
+chezmoi cd
+cd ..
+ls
+cd chezmoi\
+ls
+cat chezmoi.toml
+hlx
+hx chezmoi.toml
+ls
+lazygit
+mkdir .chezmoidata
+cd .chezmoidata\
+ni packages.yaml
+help
+help commands
+touch packages.yaml
+ls -l
+ls
+exit
+chezmoi cd
+cd ..
+ls
+cd nushell\
+ls
+cat history.txt
+ls
