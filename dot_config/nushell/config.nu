@@ -17,3 +17,4 @@
 # You can remove these comments if you want or leave
 # them for future reference.
 alias hlx = hx -c "($env.XDG_CONFIG_HOME)\\helix\\config.toml"
+use ~/.cache/starship/init.nu

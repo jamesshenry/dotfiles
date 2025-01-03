@@ -16,3 +16,6 @@
 #
 # You can remove these comments if you want or leave
 # them for future reference.
+
+mkdir ~/.cache/starship
+starship init nu | save -f ~/.cache/starship/init.nu
