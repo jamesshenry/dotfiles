@@ -1,0 +1,207 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema-preview",
+    "actions": [
+        {
+            "command": {
+                "action": "globalSummon"
+            },
+            "id": "User.MyGlobalSummon"
+        },
+        {
+            "command": {
+                "action": "switchToTab",
+                "index": 0
+            },
+            "id": "User.switchToTab.D3F0B923"
+        },
+        {
+            "command": "paste",
+            "id": "User.paste"
+        },
+        {
+            "command": {
+                "action": "copy",
+                "singleLine": false
+            },
+            "id": "User.copy.644BA8F2"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "id": "User.splitPane.A6751878"
+        },
+        {
+            "command": "find",
+            "id": "User.find"
+        }
+    ],
+    "alwaysOnTop": false,
+    "alwaysShowNotificationIcon": true,
+    "autoHideWindow": false,
+    "centerOnLaunch": true,
+    "confirmCloseAllTabs": false,
+    "copyFormatting": "all",
+    "copyOnSelect": true,
+    "defaultProfile": "{0c5236b7-db63-4da1-92bf-c4f67a3d794a}",
+    "initialCols": 200,
+    "initialRows": 50,
+    "keybindings": [
+        {
+            "id": null,
+            "keys": "ctrl+shift+w"
+        },
+        {
+            "id": "User.MyGlobalSummon",
+            "keys": "win+`"
+        },
+        {
+            "id": "Terminal.ClosePane",
+            "keys": "ctrl+w"
+        },
+        {
+            "id": "Terminal.OpenNewTab",
+            "keys": "ctrl+t"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+t"
+        }
+    ],
+    "minimizeToNotificationArea": false,
+    "newTabMenu": [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "profiles": {
+        "defaults": {
+            "adjustIndistinguishableColors": "indexed",
+            "backgroundImageAlignment": "bottomRight",
+            "backgroundImageStretchMode": "none",
+            "closeOnExit": "graceful",
+            "colorScheme": {
+                "dark": "Elementary",
+                "light": "Catppuccin Latte"
+            },
+            "font": {
+                "axes": {},
+                "face": "Cascadia Code NF",
+                "size": 12
+            },
+            "intenseTextStyle": "all",
+            "opacity": 76,
+            "showMarksOnScrollbar": true,
+            "useAcrylic": false
+        },
+        "list": [
+            {
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "Command Prompt"
+            },
+            {
+                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+                "hidden": false,
+                "name": "PowerShell",
+                "source": "Windows.Terminal.PowershellCore"
+            },
+            {
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": true,
+                "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                "guid": "{16208362-94fc-5b1f-a491-5b2624d5ab56}",
+                "hidden": true,
+                "name": "Visual Studio Debug Console",
+                "source": "VSDebugConsole"
+            },
+            {
+                "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
+            },
+            {
+                "commandline": "C:\\Users\\jhenry\\AppData\\Local\\Programs\\nu\\bin\\nu.exe",
+                "guid": "{0c5236b7-db63-4da1-92bf-c4f67a3d794a}",
+                "hidden": false,
+                "icon": "C:\\Users\\jhenry\\AppData\\Local\\Programs\\nu\\nu.ico",
+                "name": "Nushell",
+                "startingDirectory": "%USERPROFILE%"
+            }
+        ]
+    },
+    "schemes": [
+        {
+            "background": "#F2F2F2",
+            "black": "#5C5F77",
+            "blue": "#1E66F5",
+            "brightBlack": "#6C6F85",
+            "brightBlue": "#1E66F5",
+            "brightCyan": "#179299",
+            "brightGreen": "#40A02B",
+            "brightPurple": "#EA76CB",
+            "brightRed": "#D20F39",
+            "brightWhite": "#BCC0CC",
+            "brightYellow": "#DF8E1D",
+            "cursorColor": "#DC8A78",
+            "cyan": "#179299",
+            "foreground": "#4C4F69",
+            "green": "#40A02B",
+            "name": "Catppuccin Latte",
+            "purple": "#EA76CB",
+            "red": "#D20F39",
+            "selectionBackground": "#ACB0BE",
+            "white": "#ACB0BE",
+            "yellow": "#DF8E1D"
+        },
+        {
+            "background": "#181818",
+            "black": "#242424",
+            "blue": "#063B8C",
+            "brightBlack": "#4B4B4B",
+            "brightBlue": "#0955FF",
+            "brightCyan": "#3EA8FC",
+            "brightGreen": "#6BC219",
+            "brightPurple": "#FB0050",
+            "brightRed": "#FC1C18",
+            "brightWhite": "#8C00EC",
+            "brightYellow": "#FEC80E",
+            "cursorColor": "#BBBBBB",
+            "cyan": "#2595E1",
+            "foreground": "#EFEFEF",
+            "green": "#5AA513",
+            "name": "Elementary",
+            "purple": "#E40038",
+            "red": "#D71C15",
+            "selectionBackground": "#B5D5FF",
+            "white": "#EFEFEF",
+            "yellow": "#FDB40C"
+        }
+    ],
+    "startOnUserLogin": true,
+    "tabSwitcherMode": "mru",
+    "theme": "system",
+    "themes": [],
+    "useAcrylicInTabRow": false,
+    "windowingBehavior": "useAnyExisting"
+}
