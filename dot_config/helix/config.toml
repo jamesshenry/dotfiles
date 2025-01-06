@@ -6,6 +6,7 @@ mouse = false
 scrolloff = 15
 color-modes = true
 default-line-ending = "lf"
+shell = ["nu","-c"]
 
 [editor.cursor-shape]
 insert = "bar"
