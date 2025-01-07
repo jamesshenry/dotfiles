@@ -1,2 +1,8 @@
-[packages.windows]
-wingetids = ["Nushell.Nushell"]
+[[packages]]
+name = "fd"
+
+  [[packages.platforms]]
+  name = "windows"
+  identifier = "sharkdp.fd"
+  cmd = "winget install sharkdp.fd"
+  shell = "pwsh"
