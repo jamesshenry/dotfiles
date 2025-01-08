@@ -20,5 +20,6 @@ alias hlx = hx -c ~\.config\helix\config.toml
 alias ll = ls -l
 use ~/.cache/starship/init.nu
 source ~/.config/zoxide/init.nu
+source ~/.config/nushell/cmd_ext.nu
 
 $env.config.buffer_editor = 'hx'
