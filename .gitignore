@@ -487,7 +487,3 @@ $RECYCLE.BIN/
 # Vim temporary swap files
 *.swp
 cache
-
-
-# nushell
-dot_config/nushell/history.txt
