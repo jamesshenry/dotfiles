@@ -141,10 +141,10 @@
                 "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
             },
             {
-                "commandline": "C:\\Users\\jhenry\\AppData\\Local\\Programs\\nu\\bin\\nu.exe",
+                "commandline": "%LOCALAPPDATA%\\Programs\\nu\\bin\\nu.exe",
                 "guid": "{0c5236b7-db63-4da1-92bf-c4f67a3d794a}",
                 "hidden": false,
-                "icon": "C:\\Users\\jhenry\\AppData\\Local\\Programs\\nu\\nu.ico",
+                "icon": "%LOCALAPPDATA%\\Programs\\nu\\nu.ico",
                 "name": "Nushell",
                 "startingDirectory": "%USERPROFILE%"
             }
