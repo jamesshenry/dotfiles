@@ -3,4 +3,4 @@ cache
 {{- if ne .chezmoi.os "windows" }}
 AppData
 {{- end }}
-history.txt
+.config/nushell/history.txt
