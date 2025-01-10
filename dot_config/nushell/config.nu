@@ -22,4 +22,4 @@ use ~/.cache/starship/init.nu
 source ~/.config/zoxide/init.nu
 source ~/.config/nushell/cmd_ext.nu
 
-$env.config.buffer_editor = 'hx'
+$env.config.buffer_editor = ["hx","-c", ~/.config/helix/config.toml"]
