@@ -23,3 +23,4 @@ source ~/.config/zoxide/init.nu
 source ~/.config/nushell/cmd_ext.nu
 
 $env.config.buffer_editor = ["hx","-c", "~/.config/helix/config.toml"]
+$env.config.show_banner = false
