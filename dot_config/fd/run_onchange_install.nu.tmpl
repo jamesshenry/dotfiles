@@ -1,3 +1,10 @@
+
 {{ if eq .chezmoi.os "windows" -}}
-winget install sharkdp.fd
+if ((which fd) | is-empty) {
+	print "installing fd"
+	winget install sharkdp.fd
+} else {
+	print "updating fd"
+	winget update sharkdp.fd
+}
 {{ end -}}
