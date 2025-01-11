@@ -9,7 +9,6 @@
       "Github.Cli",
       "Helix.Helix",
       "lazygit",
-      "nushell",
       "RedHat.Podman",
       "Microsoft.DotNet.SDK.9",
       "starship",
@@ -26,7 +25,6 @@
       "gh",
       "helix",
       "lazygit",
-      "nushell",
       "starship",
       "ripgrep",
       "zoxide",
@@ -38,4 +36,3 @@
     ]
     [os.linux.cmds]
       rustup = ["/bin/bash", "-c", "curl -fsSL https://sh.rustup.rs"]
-      homebrew = ["/bin/bash", "-c", "curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh"]
