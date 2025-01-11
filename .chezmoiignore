@@ -2,5 +2,6 @@ cache
 .config/nvim
 {{- if ne .chezmoi.os "windows" }}
 AppData
+dot_config/autohotkey
 {{- end }}
 .config/nushell/history.txt
