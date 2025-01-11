@@ -1,8 +1,41 @@
-[[packages]]
-name = "fd"
-
-  [[packages.platforms]]
-  name = "windows"
-  identifier = "sharkdp.fd"
-  cmd = "winget install sharkdp.fd"
-  shell = "pwsh"
+[packages]
+  [os.windows]
+    winget = [
+      "Clement.bottom",
+      "dandavison.delta",
+      "bootandy.dust",
+      "sharkdp.fd",
+      "junegunn.fzf",
+      "Github.Cli",
+      "Helix.Helix",
+      "lazygit",
+      "nushell",
+      "RedHat.Podman",
+      "Microsoft.DotNet.SDK.9",
+      "starship",
+      "BurntSushi.ripgrep.MSVC",
+      "ajeetdsouza.zoxide",
+      "zig.zig"
+    ]
+  [os.linux]
+    brews = [
+      "bottom",
+      "git-delta",
+      "dust",
+      "fd",
+      "gh",
+      "helix",
+      "lazygit",
+      "nushell",
+      "starship",
+      "ripgrep",
+      "zoxide",
+      "zig"
+    ]
+    apts = [
+      "podman",
+      "dotnet-sdk-9.0"
+    ]
+    [os.linux.cmds]
+      rustup = ["/bin/bash", "-c", "curl -fsSL https://sh.rustup.rs"]
+      homebrew = ["/bin/bash", "-c", "curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh"]
