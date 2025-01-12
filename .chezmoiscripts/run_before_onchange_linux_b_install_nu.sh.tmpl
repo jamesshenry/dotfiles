@@ -2,4 +2,10 @@
 #!/bin/sh
 echo "installing nushell..."
 /home/linuxbrew/.linuxbrew/bin/brew install nushell
+
+echo -r "Set login shell with chsh to nushell? (y/n)"
+read -r yes
+if [ $yes = 'y']; then
+shellname=$(which nu)
+echo $shellname | sudo tee -a /etc/shells
 {{ end -}}
