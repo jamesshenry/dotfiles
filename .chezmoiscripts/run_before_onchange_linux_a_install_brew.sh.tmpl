@@ -1,4 +1,13 @@
 {{ if eq .chezmoi.os "linux" -}}
 #!/bin/bash
 sudo curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | /bin/bash
+
+echo "adding brew to .bashrc"
+echo >> /home/henry/.bashrc
+echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/henry/.bashrc
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+echo "installing brew dependencies..."
+sudo apt-get install build-essential
+/home/linuxbrew/.linuxbrew/bin/brew install gcc
 {{ end -}}
