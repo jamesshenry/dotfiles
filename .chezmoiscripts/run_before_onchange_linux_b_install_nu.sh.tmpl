@@ -8,4 +8,5 @@ read -r yes
 if [ $yes = 'y']; then
 shellname=$(which nu)
 echo $shellname | sudo tee -a /etc/shells
+fi
 {{ end -}}
