@@ -1,4 +1,4 @@
-cache
+**/cache
 .config/nvim
 {{- if ne .chezmoi.os "windows" }}
 AppData

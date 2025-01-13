@@ -1,6 +1,8 @@
-format = '$shell $all$directory$character'
+format = '$os in $shell $all$directory$character'
 right_format = '$time'
 
+[os]
+disabled = false
 [time]
 disabled = false
 [shell]
