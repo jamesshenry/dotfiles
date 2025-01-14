@@ -1,0 +1,7 @@
+{{ if eq .chezmoi.os "windows" -}}
+if ($null -eq (Get-Command nu)) {
+	Write-Host "Installing nushell..." -ForegroundColor Yellow
+	winget install Nushell.Nushell
+	Write-Host "Done." - ForegroundColor Green
+}
+{{ end -}}
