@@ -1,8 +1,8 @@
 [user]
-    email = {{ .email | quote }}
+    email = "james.henry@kerridgecs.com"
 
 [core]
-    editor = nvim
+    editor = hx
     pager = delta
     eol = lf
 
