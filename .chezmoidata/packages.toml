@@ -1,42 +1,69 @@
-  [packages.windows]
-    winget = [
-      "Clement.bottom",
-      "dandavison.delta",
-      "bootandy.dust",
-      "fastfetch",
-      "sharkdp.fd",
-      "junegunn.fzf",
-      "Github.Cli",
-      "Helix.Helix",
-      "lazygit",
-      "RedHat.Podman",
-      "Microsoft.DotNet.SDK.9",
-      "starship",
-      "BurntSushi.ripgrep.MSVC",
-      "ajeetdsouza.zoxide",
-      "zig.zig"
-    ]
-  [packages.linux]
-    brews = [
-      "bottom",
-      "git-delta",
-      "dust",
-      "fastfetch",
-      "fd",
-      "gh",
-      "helix",
-      "lazygit",
-      "starship",
-      "ripgrep",
-      "zoxide",
-      "zig"
-    ]
-    apts = [
-      "podman",
-      "dotnet-sdk-9.0"
-    ]
-    casks = []
-  [packages.linux.cmds]
-    rustup = ["/bin/bash", "-c", "curl -fsSL https://sh.rustup.rs"]
-  [packages.crossplatform]
-    cargo = ["atuin"]  
+[[packages.windows.winget]]
+id = "Clement.bottom"
+cmd = "btm"
+
+[[packages.windows.winget]]
+id = "dandavison.delta"
+cmd = "delta"
+
+[[packages.windows.winget]]
+id = "bootandy.dust"
+cmd = "dust"
+
+[[packages.windows.winget]]
+id = "Fastfetch-cli.Fastfetch"
+cmd = "fastfetch"
+
+[[packages.windows.winget]]
+id = "sharkdp.fd"
+cmd = "fd"
+
+[[packages.windows.winget]]
+id = "junegunn.fzf"
+cmd = "fzf"
+
+[[packages.windows.winget]]
+id = "Github.Cli"
+cmd = "gh"
+
+[[packages.windows.winget]]
+id = "Helix.Helix"
+cmd = "hx"
+
+[[packages.windows.winget]]
+id = "lazygit"
+cmd = "lazygit"
+
+[[packages.windows.winget]]
+id = "RedHat.Podman"
+cmd = "podman"
+
+[[packages.windows.winget]]
+id = "Microsoft.DotNet.SDK.9"
+cmd = "dotnet"
+
+[[packages.windows.winget]]
+id = "starship"
+cmd = "starship"
+
+[[packages.windows.winget]]
+id = "BurntSushi.ripgrep.MSVC"
+cmd = "rg"
+
+[[packages.windows.winget]]
+id = "ajeetdsouza.zoxide"
+cmd = "zoxide"
+
+[[packages.windows.winget]]
+id = "zig.zig"
+cmd = "zig"
+[packages.linux]
+brews = ["bottom", "git-delta", "dust", "fastfetch", "fd", "gh", "helix", "lazygit", "starship", "ripgrep", "zoxide", "zig"]
+apts = ["podman", "dotnet-sdk-9.0"]
+casks = []
+[packages.linux.cmds]
+rustup = ["/bin/bash", "-c", "curl -fsSL https://sh.rustup.rs"]
+[[packages.crossplatform.rust]]
+cmd = "cargo install atuin"
+pkgName = "atuin"
+custom = 'gh run list --repo Mgniquick/atuin-win --status completed --limit 1 --json databaseId -q ".[].databaseId" | gh run download $in --repo Magniquick/atuin-win'

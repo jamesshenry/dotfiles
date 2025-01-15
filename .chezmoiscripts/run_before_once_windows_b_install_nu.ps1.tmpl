@@ -3,7 +3,7 @@ Write-Host "Installing nushell..." -ForegroundColor Yellow
 
 if ($null -eq (Get-Command nu)) {
 	winget install Nushell.Nushell
-	Write-Host "Done." - ForegroundColor Green
+	Write-Host "Done." -ForegroundColor Green
 } else {
 	Write-Host "nushell already installed." -ForegroundColor Magenta
 }
