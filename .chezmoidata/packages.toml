@@ -43,6 +43,10 @@ id = "Microsoft.DotNet.SDK.9"
 cmd = "dotnet"
 
 [[packages.windows.winget]]
+id = "Typst.Typst"
+cmd = "typst"
+
+[[packages.windows.winget]]
 id = "starship"
 cmd = "starship"
 
@@ -57,8 +61,9 @@ cmd = "zoxide"
 [[packages.windows.winget]]
 id = "zig.zig"
 cmd = "zig"
+
 [packages.linux]
-brews = ["bottom", "git-delta", "dust", "fastfetch", "fd", "gh", "helix", "lazygit", "starship", "ripgrep", "zoxide", "zig"]
+brews = ["bottom", "git-delta", "dust", "fastfetch", "fd", "gh", "helix", "lazygit", "starship", "tpyst", "ripgrep", "zoxide", "zig"]
 apts = ["podman", "dotnet-sdk-9.0"]
 casks = []
 [packages.linux.cmds]
