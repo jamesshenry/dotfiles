@@ -5,6 +5,7 @@
     editor = hx
     pager = delta
     eol = lf
+    autocrlf = true
 
 [interactive]
     difffilter = delta --color-only
