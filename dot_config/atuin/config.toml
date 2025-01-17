@@ -1,3 +1,5 @@
 
 [dotfiles]
 enabled = true
+[theme]
+name = "marine"
