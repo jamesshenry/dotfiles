@@ -1,3 +1,11 @@
 [[language]]
 name = "toml"
 formatter = { command = "taplo", args = ["fmt", "-"] }
+[[language]]
+name = "c-sharp"
+language-servers = ["roslyn"]
+
+[language-server.roslyn]
+command = "roslyn-language-server"
+
+
