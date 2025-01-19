@@ -1,10 +1,14 @@
 alias hlx = hx -c ~/.config/helix/config.toml
 alias ll = ls -l
 alias lzy = lazygit
-use ~/.cache/starship/init.nu
-source ~/.config/zoxide/init.nu
 source ~/.config/nushell/cmd_ext.nu
-# source ~/.local/share/atuin/init.nu
+ls **/.env | each {
+    |it| let a = $it.name | open | from toml;
+    $a | reject PATH | load-env
+    $env.path ++= $a.PATH
+}
 
 $env.config.buffer_editor = ["hx","-c", "~/.config/helix/config.toml"]
 $env.config.show_banner = false
+
+use ~/.local/share/starship/init.nu
