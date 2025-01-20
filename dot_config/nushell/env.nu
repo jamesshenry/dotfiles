@@ -16,7 +16,11 @@
 #
 # You can remove these comments if you want or leave
 # them for future reference.
+# ls ~/.config/**/.env | each {
+#     |file|
+#     let env_vars = open $file.name | from toml;
+#     $env_vars | reject PATH | load-env
+#     $env.path | append $env_vars.PATH
+# }
 
-mkdir ~/.cache/starship
-starship init nu | save -f ~/.cache/starship/init.nu
-zoxide init nushell | save -f ~/.config/zoxide/init.nu
+source "~/.config/homebrew/env.nu"

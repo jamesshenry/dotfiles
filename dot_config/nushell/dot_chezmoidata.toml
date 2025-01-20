@@ -1,0 +1,8 @@
+name = "nushell"
+
+[platform.windows]
+cmd = "winget install nushell"
+
+[platform.linux]
+cmd = ""
+shell = "sudo apt install nushell"
