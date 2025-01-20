@@ -7,7 +7,6 @@ true-color = true
 line-number = "relative"
 mouse = false
 scrolloff = 15
-color-modes = true
 default-line-ending = "native"
 shell = ["nu","-c"]
 color-modes = true
