@@ -63,7 +63,7 @@ id = "zig.zig"
 cmd = "zig"
 
 [packages.linux]
-brews = ["bottom", "git-delta", "dust", "fastfetch", "fd", "gh", "helix", "lazygit", "starship", "tpyst", "ripgrep", "zoxide", "zig"]
+brews = ["bottom", "git-delta", "dust", "fastfetch", "fd", "gh", "helix", "lazygit", "starship", "typst", "ripgrep", "zoxide", "zig"]
 apts = ["podman", "dotnet-sdk-9.0"]
 casks = []
 [packages.linux.cmds]
