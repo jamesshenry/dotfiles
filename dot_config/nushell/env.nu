@@ -24,4 +24,3 @@
 # }
 
 source "~/.config/homebrew/env.nu"
-source "~/.config/starship/init.nu"
