@@ -1,8 +1,8 @@
 **/cache
 dot_config/nvim
+dot_config/**/history.txt
 {{- if ne .chezmoi.os "windows" }}
 AppData
 dot_config/autohotkey
 {{- end }}
 dot_config/nushell/history.txt
-dot_config/starship/init.nu
