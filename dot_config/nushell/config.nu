@@ -6,4 +6,4 @@ alias ll = ls -l
 alias lzy = lazygit
 source ~/.config/nushell/cmd_ext.nu
 
-source ~/.config/starship/init.nu
+source ~/.config/starship/config.nu
