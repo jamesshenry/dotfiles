@@ -1,7 +1,8 @@
 **/cache
-.config/nvim
+dot_config/nvim
 {{- if ne .chezmoi.os "windows" }}
 AppData
 dot_config/autohotkey
 {{- end }}
-.config/nushell/history.txt
+dot_config/nushell/history.txt
+dot_config/starship/init.nu
