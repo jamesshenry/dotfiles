@@ -5,3 +5,5 @@ alias hlx = hx -c ~/.config/helix/config.toml
 alias ll = ls -l
 alias lzy = lazygit
 source ~/.config/nushell/cmd_ext.nu
+
+source ~/.config/starship/init.nu
