@@ -23,5 +23,7 @@
 #     $env.path | append $env_vars.PATH
 # }
 
-source "~/.config/homebrew/env.nu"
+source ~/.config/homebrew/env.nu
 source ~/.config/zoxide/env.nu
+source ~/.config/atuin/env.nu
+source ~/.config/starship/env.nu
