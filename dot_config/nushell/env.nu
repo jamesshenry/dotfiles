@@ -24,3 +24,4 @@
 # }
 
 source "~/.config/homebrew/env.nu"
+source ~/.config/zoxide/env.nu
