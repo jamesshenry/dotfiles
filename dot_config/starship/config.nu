@@ -1,7 +1,7 @@
 $env.STARSHIP_CONFIG = $'($env.XDG_CONFIG_HOME)\starship\starship.toml'
 
 const initPath = "./"
-const initFile = "init.nu"
+const initFile = "~/.config/starship/init.nu"
 
 #if ($initPath | path exists) {
 #} else {
