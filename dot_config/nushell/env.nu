@@ -23,6 +23,9 @@
 #     $env.path | append $env_vars.PATH
 # }
 
+$env.XDG_DATA_HOME = ~/.local/share
+$env.XDG_CONFIG_HOME = ~/.config
+
 source ~/.config/homebrew/env.nu
 source ~/.config/zoxide/env.nu
 source ~/.config/atuin/env.nu
