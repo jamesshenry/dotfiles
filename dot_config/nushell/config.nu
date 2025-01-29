@@ -12,3 +12,4 @@ source ~/.config/starship/starship.nu
 source ~/.config/zoxide/zoxide.nu
 source ~/.config/atuin/atuin.nu
 
+fastfetch
