@@ -57,13 +57,16 @@ cmd = "rg"
 [[packages.windows.winget]]
 id = "ajeetdsouza.zoxide"
 cmd = "zoxide"
+[[packages.windows.winget]]
+id = "sharkdp.vivid"
+cmd = "vivid"
 
 [[packages.windows.winget]]
 id = "zig.zig"
 cmd = "zig"
 
 [packages.linux]
-brews = ["bottom", "git-delta", "dust", "fastfetch", "fd", "gh", "helix", "lazygit", "starship", "typst", "ripgrep", "zoxide", "zig"]
+brews = ["bottom", "git-delta", "dust", "fastfetch", "fd", "gh", "helix", "lazygit", "starship", "typst", "ripgrep", "vivid", "zoxide", "zig"]
 apts = ["podman", "dotnet-sdk-9.0"]
 casks = []
 [packages.linux.cmds]
