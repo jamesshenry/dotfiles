@@ -1,5 +1,6 @@
 
 
+$env.LS_COLORS = $"(vivid generate solarized-light)"
 $env.config.buffer_editor = ["hx","-c", "~/.config/helix/config.toml"]
 $env.config.show_banner = false
 
