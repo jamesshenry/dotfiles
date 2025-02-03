@@ -6,3 +6,6 @@ AppData
 dot_config/autohotkey
 {{- end }}
 dot_config/nushell/history.txt
+
+dot_config/starship/starship.nu
+dot_config/gh/hosts.yml
