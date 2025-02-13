@@ -1,18 +1,5 @@
-$env.STARSHIP_CONFIG = $'($env.XDG_CONFIG_HOME)\starship\starship.toml'
+mkdir ($nu.data-dir | path join "vendor/autoload")
+starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
 
-const initPath = "./"
-const initFile = "~/.config/starship/init.nu"
 
-#if ($initPath | path exists) {
-#} else {
-#  mkdir $initPath -v
-#  if (($initPath | path join $initFile) | path exists) {
-#  } else {
-#    starship init nu | save -f ($initPath | path join $initFile)
-#  }
-#}
-
-if ( ($initFile | path exists) != true ) {
-  starship init nu | save -f $initFile
-}
-source ./init.nu
+$env.STARSHIP_CONFIG = "~/.config/starship/starship.toml" | path expand
