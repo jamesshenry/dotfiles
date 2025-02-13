@@ -9,6 +9,6 @@ source ~/.config/nushell/cmd_ext.nu
 
 source ~/.config/starship/config.nu
 source ~/.config/zoxide/zoxide.nu
-source ~/.config/atuin/atuin.nu
+source ~/.config/atuin/config.nu
 
 fastfetch

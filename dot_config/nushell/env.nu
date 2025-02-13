@@ -25,4 +25,3 @@
 
 source ~/.config/homebrew/env.nu
 source ~/.config/zoxide/env.nu
-source ~/.config/atuin/env.nu
