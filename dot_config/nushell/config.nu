@@ -8,7 +8,7 @@ alias lzy = lazygit
 source ~/.config/nushell/cmd_ext.nu
 
 source ~/.config/starship/config.nu
-source ~/.config/zoxide/zoxide.nu
+source ~/.config/zoxide/config.nu
 source ~/.config/atuin/config.nu
 
 fastfetch
