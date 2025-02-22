@@ -8,6 +8,7 @@ $git_status\
 $cmd_duration\
 $line_break\
 $python\
+$dotnet\
 $character"""
 
 right_format = """
@@ -48,6 +49,9 @@ style = "yellow"
 [python]
 format = "[$virtualenv]($style) "
 style = "bright-black"
+
+[dotnet]
+disabled = false
 
 [username]
 [hostname]
