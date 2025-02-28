@@ -1,19 +1,16 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema-preview",
-    "actions": 
-    [
+    "actions": [
         {
-            "command": 
-            {
+            "command": {
                 "action": "globalSummon",
                 "monitor": "any"
             },
             "id": "User.MyGlobalSummon"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "switchToTab",
                 "index": 0
             },
@@ -24,16 +21,14 @@
             "id": "User.paste"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "copy",
                 "singleLine": false
             },
             "id": "User.copy.644BA8F2"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
@@ -49,14 +44,12 @@
     "alwaysShowNotificationIcon": true,
     "autoHideWindow": false,
     "centerOnLaunch": true,
-    "confirmCloseAllTabs": false,
     "copyFormatting": "all",
     "copyOnSelect": true,
     "defaultProfile": "{0c5236b7-db63-4da1-92bf-c4f67a3d794a}",
     "initialCols": 200,
     "initialRows": 50,
-    "keybindings": 
-    [
+    "keybindings": [
         {
             "id": null,
             "keys": "ctrl+shift+w"
@@ -79,27 +72,22 @@
         }
     ],
     "minimizeToNotificationArea": false,
-    "newTabMenu": 
-    [
+    "newTabMenu": [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles": 
-    {
-        "defaults": 
-        {
+    "profiles": {
+        "defaults": {
             "adjustIndistinguishableColors": "indexed",
             "backgroundImageAlignment": "bottomRight",
             "backgroundImageStretchMode": "none",
             "closeOnExit": "graceful",
-            "colorScheme": 
-            {
+            "colorScheme": {
                 "dark": "Elementary",
-                "light": "Catppuccin Latte"
+                "light": "Elementary"
             },
-            "font": 
-            {
+            "font": {
                 "axes": {},
                 "face": "Cascadia Code NF",
                 "size": 12
@@ -109,8 +97,7 @@
             "showMarksOnScrollbar": true,
             "useAcrylic": false
         },
-        "list": 
-        [
+        "list": [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -160,11 +147,16 @@
                 "icon": "%LOCALAPPDATA%\\Programs\\nu\\nu.ico",
                 "name": "Nushell",
                 "startingDirectory": "%USERPROFILE%"
+            },
+            {
+                "guid": "{44c15fb5-7ea3-5a12-be1b-5565cdd8cc42}",
+                "hidden": false,
+                "name": "podman-machine-default",
+                "source": "Microsoft.WSL"
             }
         ]
     },
-    "schemes": 
-    [
+    "schemes": [
         {
             "background": "#F2F2F2",
             "black": "#5C5F77",
@@ -217,5 +209,6 @@
     "theme": "system",
     "themes": [],
     "useAcrylicInTabRow": false,
+    "warning.confirmCloseAllTabs": false,
     "windowingBehavior": "useAnyExisting"
 }
