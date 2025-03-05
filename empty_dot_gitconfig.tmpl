@@ -1,0 +1,3 @@
+[user]
+	email = {{ if hasKey . "email" }}{{ .email | quote }}{{ else }}"79054685+henry-js@users.noreply.github.com"{{ end }}
+	name = {{ if hasKey . "name" }}{{ .name | quote }}{{ else }}"henry-js"{{ end }}
