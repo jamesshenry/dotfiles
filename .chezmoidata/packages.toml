@@ -27,12 +27,16 @@ id = "Github.Cli"
 cmd = "gh"
 
 [[packages.windows.winget]]
+id = "gerardog.gsudo"
+cmd = "gsudo"
+
+[[packages.windows.winget]]
 id = "Helix.Helix"
 cmd = "hx"
 
 [[packages.windows.winget]]
 id = "lazygit"
-cmd = "lazygit"
+cmd = "JesseDuffield.Lazygit"
 
 [[packages.windows.winget]]
 id = "RedHat.Podman"
@@ -47,7 +51,7 @@ id = "Typst.Typst"
 cmd = "typst"
 
 [[packages.windows.winget]]
-id = "starship"
+id = "starship.starship"
 cmd = "starship"
 
 [[packages.windows.winget]]
@@ -60,10 +64,6 @@ cmd = "zoxide"
 [[packages.windows.winget]]
 id = "sharkdp.vivid"
 cmd = "vivid"
-
-[[packages.windows.winget]]
-id = "zig.zig"
-cmd = "zig"
 
 [packages.linux]
 brews = ["bottom", "git-delta", "dust", "fastfetch", "fd", "gh", "helix", "lazygit", "starship", "typst", "ripgrep", "vivid", "zoxide", "zig"]

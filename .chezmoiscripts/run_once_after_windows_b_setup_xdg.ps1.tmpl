@@ -1,0 +1,4 @@
+Write-Host "Setting XDG env variables..." -ForegroundColor Magenta
+[Environment]::SetEnvironmentVariable('XDG_CONFIG_HOME',"$env:USERPROFILE\.config",'User')
+[Environment]::SetEnvironmentVariable('XDG_DATA_HOME',"$env:USERPROFILE\.local\share",'User')
+Write-Host "Done" -ForegroundColor Green
