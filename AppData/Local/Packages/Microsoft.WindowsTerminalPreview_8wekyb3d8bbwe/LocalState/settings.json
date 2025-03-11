@@ -51,7 +51,7 @@
     "initialRows": 50,
     "keybindings": [
         {
-            "id": null,
+            "id": "",
             "keys": "ctrl+shift+w"
         },
         {
@@ -67,7 +67,7 @@
             "keys": "ctrl+t"
         },
         {
-            "id": null,
+            "id": "",
             "keys": "ctrl+shift+t"
         }
     ],
