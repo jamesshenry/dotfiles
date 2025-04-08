@@ -51,7 +51,7 @@
     "initialRows": 50,
     "keybindings": [
         {
-            "id": "",
+            "id": null,
             "keys": "ctrl+shift+w"
         },
         {
@@ -67,7 +67,7 @@
             "keys": "ctrl+t"
         },
         {
-            "id": "",
+            "id": null,
             "keys": "ctrl+shift+t"
         }
     ],
@@ -83,10 +83,7 @@
             "backgroundImageAlignment": "bottomRight",
             "backgroundImageStretchMode": "none",
             "closeOnExit": "graceful",
-            "colorScheme": {
-                "dark": "Elementary",
-                "light": "Elementary"
-            },
+            "colorScheme": "Elementary",
             "font": {
                 "axes": {},
                 "face": "Cascadia Code NF",
@@ -117,28 +114,10 @@
                 "source": "Windows.Terminal.PowershellCore"
             },
             {
-                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
-                "hidden": true,
-                "name": "Ubuntu",
-                "source": "Windows.Terminal.Wsl"
-            },
-            {
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
                 "hidden": false,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
-            },
-            {
-                "guid": "{16208362-94fc-5b1f-a491-5b2624d5ab56}",
-                "hidden": true,
-                "name": "Visual Studio Debug Console",
-                "source": "VSDebugConsole"
-            },
-            {
-                "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
-                "hidden": false,
-                "name": "Ubuntu",
-                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
             },
             {
                 "commandline": "%LOCALAPPDATA%\\Programs\\nu\\bin\\nu.exe",
@@ -147,12 +126,6 @@
                 "icon": "%LOCALAPPDATA%\\Programs\\nu\\nu.ico",
                 "name": "Nushell",
                 "startingDirectory": "%USERPROFILE%"
-            },
-            {
-                "guid": "{44c15fb5-7ea3-5a12-be1b-5565cdd8cc42}",
-                "hidden": false,
-                "name": "podman-machine-default",
-                "source": "Microsoft.WSL"
             }
         ]
     },
@@ -208,7 +181,7 @@
     "tabSwitcherMode": "mru",
     "theme": "system",
     "themes": [],
-    "useAcrylicInTabRow": false,
+    "useAcrylicInTabRow": true,
     "warning.confirmCloseAllTabs": false,
     "windowingBehavior": "useAnyExisting"
 }
