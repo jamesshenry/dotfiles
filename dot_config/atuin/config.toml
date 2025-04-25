@@ -2,3 +2,5 @@
 enabled = true
 [theme]
 name = "marine"
+[sync]
+records = true
