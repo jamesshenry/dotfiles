@@ -1,4 +1,7 @@
 [[packages.windows.winget]]
+id = "Wilfred.difftastic"
+cmd = "difft"
+[[packages.windows.winget]]
 id = "Clement.bottom"
 cmd = "btm"
 
