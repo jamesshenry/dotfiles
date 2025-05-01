@@ -1,0 +1,9 @@
+[fetch]
+	prune = true
+[gpg]
+	format = ssh
+[merge]
+	tool = vscode
+	cmd = 'code --wait --merge $REMOTE $LOCAL $BASE $MERGED'
+[diff]
+	external = difft --syntax-highlight=off
