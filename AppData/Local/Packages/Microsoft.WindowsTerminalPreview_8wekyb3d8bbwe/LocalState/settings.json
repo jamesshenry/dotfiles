@@ -126,6 +126,11 @@
                 "icon": "%LOCALAPPDATA%\\Programs\\nu\\nu.ico",
                 "name": "Nushell",
                 "startingDirectory": "%USERPROFILE%"
+            },
+            {
+                "name": "ssh docker-vm profile",
+                "commandline": "ssh ruph0us@192.168.0.20",
+                "guid": "{61214dea-1990-4be9-9d31-cb0c3b1e2a1a}"
             }
         ]
     },
