@@ -11,4 +11,5 @@ source ~/.config/nushell/cmd_ext.nu
 source ~/.config/starship/config.nu
 source ~/.config/zoxide/config.nu
 source ~/.config/atuin/config.nu
+source ~/.config/ov/config.nu
 source ~/.config/homebrew/config.nu
