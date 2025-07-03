@@ -13,3 +13,4 @@ source ~/.config/zoxide/config.nu
 source ~/.config/atuin/config.nu
 source ~/.config/ov/config.nu
 source ~/.config/homebrew/config.nu
+source ~/.config/bat/config.nu
