@@ -128,9 +128,16 @@
                 "startingDirectory": "%USERPROFILE%"
             },
             {
-                "name": "ssh docker-vm profile",
-                "commandline": "ssh ruph0us@192.168.0.20",
-                "guid": "{61214dea-1990-4be9-9d31-cb0c3b1e2a1a}"
+                "commandline": "ssh root@192.168.0.11",
+                "guid": "{c8c2c683-1942-45ba-b30c-926bee7471b6}",
+                "hidden": false,
+                "name": "ssh root@fileserver"
+            },
+            {
+                "commandline": "ssh root@192.168.0.10",
+                "guid": "{7731c0b4-befe-4c3f-8af4-8f0dedd91e04}",
+                "hidden": false,
+                "name": "ssh root@Proxmox VE"
             }
         ]
     },
@@ -182,7 +189,6 @@
             "yellow": "#FDB40C"
         }
     ],
-    "startOnUserLogin": true,
     "tabSwitcherMode": "mru",
     "theme": "system",
     "themes": [],
