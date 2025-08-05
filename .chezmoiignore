@@ -11,4 +11,4 @@ dot_config/starship/starship.nu
 dot_config/gh/hosts.yml
 dot_config/nushell/history.txt
 dot_glzr/zebar/tmp-QzpcVXNlcnNcaGVucnlqXC5nbHpyXHplYmFyXHN0YXJ0ZXI=/**
-**/node_modules
+**/node_modules**/tmp*/
