@@ -10,15 +10,15 @@
             "id": "User.MyGlobalSummon"
         },
         {
+            "command": "paste",
+            "id": "User.paste"
+        },
+        {
             "command": {
                 "action": "switchToTab",
                 "index": 0
             },
             "id": "User.switchToTab.D3F0B923"
-        },
-        {
-            "command": "paste",
-            "id": "User.paste"
         },
         {
             "command": {
@@ -28,16 +28,16 @@
             "id": "User.copy.644BA8F2"
         },
         {
+            "command": "find",
+            "id": "User.find"
+        },
+        {
             "command": {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
             },
             "id": "User.splitPane.A6751878"
-        },
-        {
-            "command": "find",
-            "id": "User.find"
         }
     ],
     "alwaysOnTop": false,
@@ -51,12 +51,12 @@
     "initialRows": 50,
     "keybindings": [
         {
-            "id": null,
-            "keys": "ctrl+shift+w"
-        },
-        {
             "id": "User.MyGlobalSummon",
             "keys": "win+`"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+w"
         },
         {
             "id": "Terminal.ClosePane",
@@ -120,7 +120,7 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
-                "commandline": "%LOCALAPPDATA%\\Programs\\nu\\bin\\nu.exe",
+                "commandline": "%USERPROFILE%\\scoop\\shims\\nu.exe",
                 "guid": "{0c5236b7-db63-4da1-92bf-c4f67a3d794a}",
                 "hidden": false,
                 "icon": "%LOCALAPPDATA%\\Programs\\nu\\nu.ico",
@@ -138,6 +138,12 @@
                 "guid": "{7731c0b4-befe-4c3f-8af4-8f0dedd91e04}",
                 "hidden": false,
                 "name": "ssh root@Proxmox VE"
+            },
+            {
+                "guid": "{47302f9c-1ac4-566c-aa3e-8cf29889d6ab}",
+                "hidden": false,
+                "name": "Nushell",
+                "source": "nu"
             }
         ]
     },
