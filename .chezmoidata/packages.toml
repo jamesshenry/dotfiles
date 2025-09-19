@@ -1,80 +1,124 @@
-[[packages.windows.winget]]
-id = "noborus.ov"
+[[packages.windows.scoop]]
+bucket = "main"
+id = "ov"
 cmd = "ov"
-[[packages.windows.winget]]
-id = "Wilfred.difftastic"
+
+[[packages.windows.scoop]]
+bucket = "main"
+id = "difftastic"
 cmd = "difft"
-[[packages.windows.winget]]
-id = "Clement.bottom"
+
+[[packages.windows.scoop]]
+bucket = "main"
+id = "bottom"
 cmd = "btm"
 
-[[packages.windows.winget]]
-id = "dandavison.delta"
+[[packages.windows.scoop]]
+bucket = "main"
+id = "delta"
 cmd = "delta"
 
-[[packages.windows.winget]]
-id = "bootandy.dust"
+[[packages.windows.scoop]]
+bucket = "main"
+id = "dust"
 cmd = "dust"
 
-[[packages.windows.winget]]
-id = "Fastfetch-cli.Fastfetch"
+[[packages.windows.scoop]]
+bucket = "main"
+id = "fastfetch"
 cmd = "fastfetch"
 
-[[packages.windows.winget]]
-id = "sharkdp.fd"
+[[packages.windows.scoop]]
+bucket = "main"
+id = "fd"
 cmd = "fd"
 
-[[packages.windows.winget]]
-id = "junegunn.fzf"
+[[packages.windows.scoop]]
+bucket = "main"
+id = "fzf"
 cmd = "fzf"
 
-[[packages.windows.winget]]
-id = "Github.Cli"
+[[packages.windows.scoop]]
+bucket = "main"
+id = "gh"
 cmd = "gh"
 
-[[packages.windows.winget]]
-id = "gerardog.gsudo"
+[[packages.windows.scoop]]
+bucket = "main"
+id = "gsudo"
 cmd = "gsudo"
 
-[[packages.windows.winget]]
-id = "Helix.Helix"
+[[packages.windows.scoop]]
+bucket = "main"
+id = "helix"
 cmd = "hx"
 
-[[packages.windows.winget]]
+[[packages.windows.scoop]]
+bucket = "extras"
 id = "lazygit"
-cmd = "JesseDuffield.Lazygit"
+cmd = "lazygit"
 
-[[packages.windows.winget]]
-id = "RedHat.Podman"
+[[packages.windows.scoop]]
+bucket = "extras"
+id = "sourcegit"
+cmd = "sourcegit"
+
+[[packages.windows.scoop]]
+bucket = "main"
+id = "podman"
 cmd = "podman"
 
-[[packages.windows.winget]]
-id = "Microsoft.DotNet.SDK.9"
-cmd = "dotnet"
-
-[[packages.windows.winget]]
-id = "Typst.Typst"
+[[packages.windows.scoop]]
+bucket = "main"
+id = "typst"
 cmd = "typst"
 
-[[packages.windows.winget]]
-id = "starship.starship"
+[[packages.windows.scoop]]
+bucket = "main"
+id = "starship"
 cmd = "starship"
 
-[[packages.windows.winget]]
-id = "BurntSushi.ripgrep.MSVC"
+[[packages.windows.scoop]]
+bucket = "main"
+id = "ripgrep"
 cmd = "rg"
 
-[[packages.windows.winget]]
-id = "ajeetdsouza.zoxide"
+
+[[packages.windows.scoop]]
+bucket = "main"
+id = "zoxide"
 cmd = "zoxide"
+
+[[packages.windows.scoop]]
+bucket = "main"
+id = "zig"
+cmd = "zig"
+
 [[packages.windows.winget]]
 id = "sharkdp.vivid"
 cmd = "vivid"
 
 [packages.linux]
-brews = ["bottom", "git-delta", "dust", "fastfetch", "fd", "gh", "helix", "lazygit", "starship", "typst", "ripgrep", "vivid", "zoxide", "zig", "noborus/tap/ov"]
+brews = [
+    "bottom",
+    "git-delta",
+    "dust",
+    "fastfetch",
+    "fd",
+    "gh",
+    "helix",
+    "lazygit",
+    "starship",
+    "typst",
+    "ripgrep",
+    "vivid",
+    "zoxide",
+    "zig",
+    "noborus/tap/ov",
+]
 apts = ["podman", "dotnet-sdk-9.0"]
 casks = []
+
 [packages.linux.cmds]
 rustup = ["/bin/bash", "-c", "curl -fsSL https://sh.rustup.rs"]
 [[packages.crossplatform.rust]]
