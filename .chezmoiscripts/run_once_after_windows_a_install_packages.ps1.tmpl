@@ -1,5 +1,30 @@
 {{if eq .chezmoi.os "windows" -}}
 
+
+# Ensure Scoop is installed and buckets are added
+# This block should ideally be run before any Scoop installs
+# but is included here for completeness.
+# A dedicated run_once_ script might be better for Scoop setup.
+if (-not (Get-Command scoop.ps1 -ErrorAction SilentlyContinue)) {
+    Write-Host "==> Installing Scoop..." -ForegroundColor Yellow
+    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+    Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+}
+
+scoop bucket add extras
+
+{{ range .packages.windows.scoop -}}
+Write-Host "==> Installing Scoop package: {{ .id }} (from bucket {{ .bucket -}})..." -ForegroundColor Yellow
+
+if ($null -eq ( Get-Command {{ .cmd }} -ErrorAction SilentlyContinue )) {
+	scoop install {{ .bucket }}/{{ .id }}
+	Write-Host "Done." -ForegroundColor Green
+} else {
+	Write-Host "{{ .id }} already installed." -ForegroundColor Magenta
+}
+
+{{ end -}}
+
 {{ range .packages.windows.winget -}}
 Write-Host "==> Installing {{ .id -}}..." -ForegroundColor Yellow
 
