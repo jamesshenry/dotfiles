@@ -15,6 +15,16 @@ cmd = "btm"
 
 [[packages.windows.scoop]]
 bucket = "main"
+id = "scc"
+cmd = "scc"
+
+[[packages.windows.scoop]]
+bucket = "main"
+id = "jq"
+cmd = "jq"
+
+[[packages.windows.scoop]]
+bucket = "main"
 id = "delta"
 cmd = "delta"
 
@@ -50,6 +60,11 @@ cmd = "gsudo"
 
 [[packages.windows.scoop]]
 bucket = "main"
+id = "rustup-msvc"
+cmd = "rustup-msvc"
+
+[[packages.windows.scoop]]
+bucket = "main"
 id = "helix"
 cmd = "hx"
 
@@ -75,6 +90,11 @@ cmd = "typst"
 
 [[packages.windows.scoop]]
 bucket = "main"
+id = "act"
+cmd = "act"
+
+[[packages.windows.scoop]]
+bucket = "main"
 id = "starship"
 cmd = "starship"
 
@@ -93,6 +113,11 @@ cmd = "zoxide"
 bucket = "main"
 id = "zig"
 cmd = "zig"
+
+[[packages.windows.scoop]]
+bucket = "main"
+id = "bat"
+cmd = "bat"
 
 [[packages.windows.winget]]
 id = "sharkdp.vivid"
