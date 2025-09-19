@@ -1,7 +1,19 @@
-{{ if eq .chezmoi.os "windows" -}}
-Write-Host "Installing nushell..." -ForegroundColor Yellow
+# Ensure Scoop is installed and buckets are added
+# This block should ideally be run before any Scoop installs
+# but is included here for completeness.
+# A dedicated run_once_ script might be better for Scoop setup.
+if (-not (Get-Command scoop.ps1 -ErrorAction SilentlyContinue)) {
+    Write-Host "==> Installing Scoop..." -ForegroundColor Yellow
+    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+    Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+}
 
-if ($null -eq (Get-Command nu)) {
+scoop bucket add extras
+
+{{ if eq .chezmoi.os "windows" -}}
+Write-Host "==> Installing nushell..." -ForegroundColor Yellow
+
+if ($null -eq (Get-Command nu -ErrorAction SilentlyContinue)) {
 	winget install Nushell.Nushell
 	Write-Host "Done." -ForegroundColor Green
 } else {
