@@ -123,6 +123,9 @@ cmd = "bat"
 id = "sharkdp.vivid"
 cmd = "vivid"
 
+[[packages.windows.winget]]
+id = "Microsoft.PowerToys"
+
 [packages.linux]
 brews = [
     "bottom",

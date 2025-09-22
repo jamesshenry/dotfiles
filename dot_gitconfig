@@ -9,5 +9,5 @@
 	external = difft --syntax-highlight=off
 [includeIf "gitdir:C:/source/devops/"]
 	path = ~/.config/git/work.config
-[includeIf "gitdir:~/repos/"]
+[includeIf "gitdir:C:/source/personal/"]
 	path = ~/.config/git/personal.config
