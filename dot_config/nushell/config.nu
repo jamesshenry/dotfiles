@@ -14,3 +14,5 @@ source ~/.config/atuin/config.nu
 source ~/.config/ov/config.nu
 source ~/.config/homebrew/config.nu
 source ~/.config/bat/config.nu
+source ~/.config/yazi/config.nu
+source ~/.config/git/config.nu
