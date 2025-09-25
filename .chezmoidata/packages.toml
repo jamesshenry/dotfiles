@@ -119,12 +119,14 @@ bucket = "main"
 id = "bat"
 cmd = "bat"
 
+[[packages.windows.scoop]]
+bucket = "main"
+id = "yazi"
+cmd = "yazi"
+
 [[packages.windows.winget]]
 id = "sharkdp.vivid"
 cmd = "vivid"
-
-[[packages.windows.winget]]
-id = "Microsoft.PowerToys"
 
 [packages.linux]
 brews = [
