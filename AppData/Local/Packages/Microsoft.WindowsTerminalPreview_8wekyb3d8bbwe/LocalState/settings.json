@@ -1,9 +1,11 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema-preview",
-    "actions": [
+    "actions": 
+    [
         {
-            "command": {
+            "command": 
+            {
                 "action": "globalSummon",
                 "monitor": "any"
             },
@@ -14,14 +16,16 @@
             "id": "User.paste"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "switchToTab",
                 "index": 0
             },
             "id": "User.switchToTab.D3F0B923"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "copy",
                 "singleLine": false
             },
@@ -32,7 +36,8 @@
             "id": "User.find"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
@@ -49,7 +54,8 @@
     "defaultProfile": "{0c5236b7-db63-4da1-92bf-c4f67a3d794a}",
     "initialCols": 200,
     "initialRows": 50,
-    "keybindings": [
+    "keybindings": 
+    [
         {
             "id": "User.MyGlobalSummon",
             "keys": "win+`"
@@ -72,19 +78,23 @@
         }
     ],
     "minimizeToNotificationArea": false,
-    "newTabMenu": [
+    "newTabMenu": 
+    [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles": {
-        "defaults": {
+    "profiles": 
+    {
+        "defaults": 
+        {
             "adjustIndistinguishableColors": "indexed",
             "backgroundImageAlignment": "bottomRight",
             "backgroundImageStretchMode": "none",
             "closeOnExit": "graceful",
             "colorScheme": "Elementary",
-            "font": {
+            "font": 
+            {
                 "axes": {},
                 "face": "Cascadia Code NF",
                 "size": 12
@@ -94,7 +104,8 @@
             "showMarksOnScrollbar": true,
             "useAcrylic": false
         },
-        "list": [
+        "list": 
+        [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -123,7 +134,6 @@
                 "commandline": "%USERPROFILE%\\scoop\\shims\\nu.exe",
                 "guid": "{0c5236b7-db63-4da1-92bf-c4f67a3d794a}",
                 "hidden": false,
-                "icon": "%LOCALAPPDATA%\\Programs\\nu\\nu.ico",
                 "name": "Nushell",
                 "startingDirectory": "%USERPROFILE%"
             },
@@ -144,10 +154,23 @@
                 "hidden": false,
                 "name": "Nushell",
                 "source": "nu"
+            },
+            {
+                "guid": "{e76100dc-431c-51bf-b02d-50dff47dfc97}",
+                "hidden": true,
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{123eea65-4567-5e07-ab64-939011c4fe7d}",
+                "hidden": true,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },
-    "schemes": [
+    "schemes": 
+    [
         {
             "background": "#F2F2F2",
             "black": "#5C5F77",
