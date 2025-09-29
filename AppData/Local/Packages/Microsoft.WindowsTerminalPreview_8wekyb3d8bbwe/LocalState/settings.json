@@ -51,7 +51,7 @@
     "centerOnLaunch": true,
     "copyFormatting": "all",
     "copyOnSelect": true,
-    "defaultProfile": "{0c5236b7-db63-4da1-92bf-c4f67a3d794a}",
+    "defaultProfile": "{47302f9c-1ac4-566c-aa3e-8cf29889d6ab}",
     "initialCols": 200,
     "initialRows": 50,
     "keybindings": 
@@ -131,13 +131,6 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
-                "commandline": "%USERPROFILE%\\scoop\\shims\\nu.exe",
-                "guid": "{0c5236b7-db63-4da1-92bf-c4f67a3d794a}",
-                "hidden": false,
-                "name": "Nushell",
-                "startingDirectory": "%USERPROFILE%"
-            },
-            {
                 "commandline": "ssh root@192.168.0.11",
                 "guid": "{c8c2c683-1942-45ba-b30c-926bee7471b6}",
                 "hidden": false,
@@ -164,6 +157,24 @@
             {
                 "guid": "{123eea65-4567-5e07-ab64-939011c4fe7d}",
                 "hidden": true,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+                "hidden": false,
+                "name": "Git Bash",
+                "source": "Git"
+            },
+            {
+                "guid": "{f4ccc592-fb3a-5527-9747-24336677c54a}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{66820e53-bf0a-5be7-a8f7-8c29a9b80bac}",
+                "hidden": false,
                 "name": "Developer PowerShell for VS 2022",
                 "source": "Windows.Terminal.VisualStudio"
             }
