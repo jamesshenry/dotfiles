@@ -1,3 +1,5 @@
+[push]
+	autoSetuptRemote = true
 [fetch]
 	prune = true
 [gpg]
