@@ -8,4 +8,10 @@ language-servers = ["roslyn"]
 [language-server.roslyn]
 command = "roslyn-language-server"
 
+[[language]]
+name = "nu"
+language-servers = ["nushell"]
+
+[language-server.nushell]
+command = "nu --lsp"
 
