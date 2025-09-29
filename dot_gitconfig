@@ -11,3 +11,7 @@
 	path = ~/.config/git/work.config
 [includeIf "gitdir:C:/source/personal/"]
 	path = ~/.config/git/personal.config
+[includeIf "gitdir:V:/source/personal/"]
+	path = ~/.config/git/personal.config
+[core]
+	safecrlf = false
