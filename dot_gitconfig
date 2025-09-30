@@ -1,5 +1,9 @@
+[core]
+	autocrlf = true
+	editor = code --wait
 [push]
-	autoSetuptRemote = true
+	default = current
+	autoSetupRemote = true
 [fetch]
 	prune = true
 [gpg]
