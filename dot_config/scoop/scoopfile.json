@@ -1,0 +1,304 @@
+{
+    "buckets": [
+        {
+            "Name": "main",
+            "Source": "https://github.com/ScoopInstaller/Main.git",
+            "Updated": "2025-10-01T09:34:48+01:00",
+            "Manifests": 1402
+        },
+        {
+            "Name": "extras",
+            "Source": "https://github.com/ScoopInstaller/Extras",
+            "Updated": "2025-10-01T12:39:47+01:00",
+            "Manifests": 2191
+        },
+        {
+            "Name": "versions",
+            "Source": "https://github.com/ScoopInstaller/Versions",
+            "Updated": "2025-10-01T09:44:13+01:00",
+            "Manifests": 516
+        }
+    ],
+    "apps": [
+        {
+            "Info": "",
+            "Updated": "2025-09-29T17:06:57.880433+01:00",
+            "Version": "25.01",
+            "Source": "main",
+            "Name": "7zip"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-09-29T17:12:46.2233207+01:00",
+            "Version": "0.2.81",
+            "Source": "main",
+            "Name": "act"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-09-29T17:16:56.5387603+01:00",
+            "Version": "0.25.0",
+            "Source": "main",
+            "Name": "bat"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-10-01T12:58:55.8196595+01:00",
+            "Version": "0.2.1",
+            "Source": "https://gist.githubusercontent.com/jamesshenry/c07840780970b8e7fcbdd600642e6dd1/raw/f63962cfa4d12f6d065997a546b78c61a9acb0a0/better-curl-saul",
+            "Name": "better-curl-saul"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-09-29T17:06:48.7003362+01:00",
+            "Version": "0.11.1",
+            "Source": "main",
+            "Name": "bottom"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-09-29T17:02:45.5394383+01:00",
+            "Version": "2.65.2",
+            "Source": "main",
+            "Name": "chezmoi"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-09-29T17:12:27.5862832+01:00",
+            "Version": "3.14.1",
+            "Source": "main",
+            "Name": "dark"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-09-29T17:06:51.4191211+01:00",
+            "Version": "0.18.2",
+            "Source": "main",
+            "Name": "delta"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-09-29T17:06:47.9898544+01:00",
+            "Version": "0.65.0",
+            "Source": "main",
+            "Name": "difftastic"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-10-01T12:59:16.0561052+01:00",
+            "Version": "1.0.9208-23",
+            "Source": "extras",
+            "Name": "discord"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-09-29T17:06:52.4127352+01:00",
+            "Version": "1.2.3",
+            "Source": "main",
+            "Name": "dust"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-10-01T12:59:21.1874824+01:00",
+            "Version": "1.4.1.1028",
+            "Source": "extras",
+            "Name": "everything"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-09-29T17:07:01.7428227+01:00",
+            "Version": "2.53.0",
+            "Source": "main",
+            "Name": "fastfetch"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-09-29T17:07:03.3255265+01:00",
+            "Version": "10.3.0",
+            "Source": "main",
+            "Name": "fd"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-09-29T17:07:04.3938456+01:00",
+            "Version": "0.65.2",
+            "Source": "main",
+            "Name": "fzf"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-09-29T17:07:07.5644965+01:00",
+            "Version": "2.80.0",
+            "Source": "main",
+            "Name": "gh"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-10-01T13:00:47.7715681+01:00",
+            "Version": "3.9.1",
+            "Source": "extras",
+            "Name": "glazewm"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-09-29T17:07:10.2451557+01:00",
+            "Version": "2.6.0",
+            "Source": "main",
+            "Name": "gsudo"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-09-29T17:12:08.3851411+01:00",
+            "Version": "25.07.1",
+            "Source": "main",
+            "Name": "helix"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-09-29T17:06:49.9064517+01:00",
+            "Version": "1.8.1",
+            "Source": "main",
+            "Name": "jq"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-09-29T17:12:15.6690839+01:00",
+            "Version": "0.55.1",
+            "Source": "extras",
+            "Name": "lazygit"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-10-01T13:01:09.6652082+01:00",
+            "Version": "6.2.19",
+            "Source": "extras",
+            "Name": "nuget-package-explorer"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-10-01T13:01:44.2911674+01:00",
+            "Version": "1.9.12",
+            "Source": "extras",
+            "Name": "obsidian"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-10-01T13:01:52.3894201+01:00",
+            "Version": "0.13.6",
+            "Source": "extras",
+            "Name": "opencode"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-09-29T17:06:40.7900993+01:00",
+            "Version": "0.43.1",
+            "Source": "main",
+            "Name": "ov"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-09-29T17:12:38.407924+01:00",
+            "Version": "5.6.1",
+            "Source": "main",
+            "Name": "podman"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-10-01T13:01:54.1296277+01:00",
+            "Version": "0.15.1",
+            "Source": "https://gist.githubusercontent.com/jamesshenry/92996d4c3100b7c3d82147d0a368cc92/raw/22be9433b0e79401dfd7a2310e4811f48d88e89b/postgrestools",
+            "Name": "postgrestools"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-09-29T17:12:48.5257583+01:00",
+            "Version": "14.1.1",
+            "Source": "main",
+            "Name": "ripgrep"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-09-29T17:11:08.6009781+01:00",
+            "Version": "1.28.2",
+            "Source": "main",
+            "Name": "rustup-msvc"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-09-29T17:06:49.4360697+01:00",
+            "Version": "3.5.0",
+            "Source": "main",
+            "Name": "scc"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-09-29T17:12:26.2470227+01:00",
+            "Version": "2025.35",
+            "Source": "extras",
+            "Name": "sourcegit"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-10-01T12:58:06.2605429+01:00",
+            "Version": "3.4.17",
+            "Source": "extras",
+            "Name": "sqlitestudio"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-09-29T17:12:47.253818+01:00",
+            "Version": "1.23.0",
+            "Source": "main",
+            "Name": "starship"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-10-01T13:01:54.960804+01:00",
+            "Version": "1.3.1",
+            "Source": "https://gist.githubusercontent.com/jamesshenry/613d1f3b48723e0242dda1a249ab85a3/raw/79442e3b948d7d45ac50558db89e53ce87f92de0/tacky-borders",
+            "Name": "tacky-borders"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-09-29T17:12:43.4035076+01:00",
+            "Version": "0.13.1",
+            "Source": "main",
+            "Name": "typst"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-10-01T13:01:56.9654441+01:00",
+            "Version": "2.0.2",
+            "Source": "main",
+            "Name": "volta"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-09-29T17:17:01.3527445+01:00",
+            "Version": "25.5.31",
+            "Source": "main",
+            "Name": "yazi"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-10-01T13:02:01.0129098+01:00",
+            "Version": "3.1.1",
+            "Source": "extras",
+            "Name": "zebar"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-09-29T17:16:53.8006723+01:00",
+            "Version": "0.15.1",
+            "Source": "main",
+            "Name": "zig"
+        },
+        {
+            "Info": "",
+            "Updated": "2025-09-29T17:12:49.3128341+01:00",
+            "Version": "0.9.8",
+            "Source": "main",
+            "Name": "zoxide"
+        }
+    ]
+}
