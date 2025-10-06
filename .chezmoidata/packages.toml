@@ -124,8 +124,9 @@ bucket = "main"
 id = "yazi"
 cmd = "yazi"
 
-[[packages.windows.winget]]
-id = "sharkdp.vivid"
+[[packages.windows.scoop]]
+bucket = "main"
+id = "vivid"
 cmd = "vivid"
 
 [packages.linux]
