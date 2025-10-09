@@ -3,5 +3,10 @@
     "theme": "opencode",
     "instructions": [
         ".github/instructions/*.md"
-    ]
+    ],
+    "permission": {
+        "edit": "allow",
+        "bash": "ask",
+        "dotnet *": "ask"
+    }
 }
