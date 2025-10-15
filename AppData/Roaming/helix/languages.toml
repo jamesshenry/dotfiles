@@ -1,17 +1,6 @@
-[[language]]
-name = "toml"
-formatter = { command = "taplo", args = ["fmt", "-"] }
+[language-server.csharp]
+command = "csharp-language-server"
+
 [[language]]
 name = "c-sharp"
-language-servers = ["roslyn"]
-
-[language-server.roslyn]
-command = "roslyn-language-server"
-
-[[language]]
-name = "nu"
-language-servers = ["nushell"]
-
-[language-server.nushell]
-command = "nu --lsp"
-
+language-servers = ["csharp"]
