@@ -19,6 +19,8 @@ $time
 [shell]
 disabled = false
 format = 'using [$indicator]($style) '
+powershell_indicator = 'powershell'
+pwsh_indicator = 'pwsh'
 [directory]
 style = "blue"
 format = 'in [$path]($style)[$read_only]($read_only_style) '
