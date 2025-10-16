@@ -2,11 +2,13 @@
     "$schema": "https://opencode.ai/config.json",
     "theme": "opencode",
     "instructions": [
-        ".github/instructions/*.md"
+        ".ai/**"
     ],
     "permission": {
         "edit": "allow",
         "bash": "ask",
-        "dotnet *": "ask"
+        "dotnet *": "ask",
+        "pwsh": "ask",
+        "powershell": "ask"
     }
 }
