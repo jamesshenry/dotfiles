@@ -21,3 +21,5 @@
 	path = ~/.config/git/personal.config
 [core]
 	safecrlf = false
+[credential "helperselector"]
+	selected = manager
