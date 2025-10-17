@@ -15,7 +15,7 @@ rendering_backend: V2
 # Global configuration options
 global:
   # border_width: Width of the border (in pixels)
-  border_width: 3
+  border_width: 2
 
   # border_offset: Offset of the border from the window edges (in pixels)
   #   - Negative values shrink the border inwards
@@ -80,7 +80,7 @@ global:
   #             end: [1.0, 0.0]
   #       NOTE: [0.0, 0.0] = top-left, [1.0, 1.0] = bottom-right
   active_color:
-    colors: ["#6274e7", "#8752a3"]
+    colors: ["#ffffff", "#fff"]
     direction: 45deg
 
   inactive_color:
