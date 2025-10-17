@@ -1,0 +1,17 @@
+theme = "transparent"
+
+[editor]
+bufferline = "multiple"
+cursorline = true
+true-color = true
+line-number = "relative"
+mouse = false
+scrolloff = 15
+default-line-ending = "native"
+shell = ["nu","-c"]
+color-modes = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
