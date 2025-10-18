@@ -2,11 +2,12 @@ general:
   # Commands to run when the WM has started. This is useful for running a
   # script or launching another application.
   # Example: The below command launches Zebar.
-  startup_commands: ["shell-exec yasb"]
+  startup_commands: ["shell-exec yasb", "shell-exec tacky-borders"]
 
   # Commands to run just before the WM is shutdown.
   # Example: The below command kills Zebar.
-  shutdown_commands: ["shell-exec taskkill /IM yasb.exe /F"]
+  shutdown_commands:
+    ["shell-exec taskkill /IM yasb.exe /IM tacky-borders.exe /F"]
 
   # Commands to run after the WM config is reloaded.
   config_reload_commands: []
@@ -242,12 +243,8 @@ keybindings:
   - commands: ["wm-exit"]
     bindings: ["ctrl+alt+shift+e"]
 
-  # Re-evaluate configuration file.
-  - commands: ["wm-reload-config"]
-    bindings: ["ctrl+alt+shift+c"]
-
-  # Redraw all windows.
-  - commands: ["wm-redraw"]
+  # Refresh.
+  - commands: ["wm-redraw", "wm-reload-config"]
     bindings: ["ctrl+alt+shift+z"]
 
   - commands: ["shell-exec wt"]
