@@ -3,4 +3,12 @@ command = "csharp-language-server"
 
 [[language]]
 name = "c-sharp"
+formatter = { command = "csharpier" }
+auto-format = true
 language-servers = ["csharp"]
+
+[[language]]
+name = "toml"
+formatter = { command = "taplo", args = ["format", "-"] }
+auto-format = true
+language-servers = ["taplo"]
