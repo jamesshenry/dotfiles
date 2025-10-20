@@ -20,7 +20,7 @@ For more information about configuration options, please visit the Wiki https://
     font-size: 12px;
     color: var(--text1);
     font-weight: 600;
-    font-family: "JetBrainsMono NFP";
+    font-family: "Cascadia Code NF";
 }
 
 .yasb-bar {
@@ -328,7 +328,7 @@ For more information about configuration options, please visit the Wiki https://
     color: #7a7f8b;
     padding: 0 4px;
     margin: 0;
-    font-family: "JetBrainsMono NFP";
+    font-family: "Cascadia Code NF";
     font-weight: 400;
     font-size: 20px;
 }
