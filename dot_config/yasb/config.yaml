@@ -282,6 +282,27 @@ widgets:
         on_left: "toggle_notification"
         on_right: "do_nothing"
         on_middle: "toggle_label"
+  glazewm_binding_mode:
+    type: "glazewm.binding_mode.GlazewmBindingModeWidget"
+    options:
+      hide_if_no_active: false
+      label_if_no_active: "No binding mode active"
+      default_icon: "\uf071"
+      icons:
+        none: ""
+        resize: "\uf071"
+        pause: "\uf28c"
+      binding_modes_to_cycle_through: [
+          "none", # none handles if no binding mode is active
+          "resize",
+          "pause",
+        ]
+      callbacks:
+        on_left: "next_binding_mode"
+        on_middle: "toggle_label"
+        on_right: "disable_binding_mode"
+
+    # By default binding mode names are fetched from GlazeWM and "display_name" option takes priority over "name".
   glazewm_tiling_direction:
     type: "glazewm.tiling_direction.GlazewmTilingDirectionWidget"
     options:

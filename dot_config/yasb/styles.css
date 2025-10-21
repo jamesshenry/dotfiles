@@ -581,6 +581,35 @@ For more information about configuration options, please visit the Wiki https://
     margin-top: -20px;
 }
 
+.glazewm-binding-mode {
+    background-color: var(--crust);
+    margin: 4px 0;
+    border-radius: 12px;
+    border: 0;
+}
+
+.glazewm-binding-mode .label {
+    color: var(--text);
+    font-size: 12px;
+}
+
+.glazewm-binding-mode .label-offline {
+    color: var(--subtext0);
+    font-size: 10px;
+}
+
+.glazewm-binding-mode .icon.none {
+    color: var(--blue);
+}
+
+.glazewm-binding-mode .icon.resize {
+    color: var(--yellow);
+}
+
+.glazewm-binding-mode .icon.pause {
+    color: var(--red);
+}
+
 .glazewm-tiling-direction {
     background-color: transparent;
     padding: 0;
