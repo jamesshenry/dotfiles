@@ -122,6 +122,7 @@ window_rules:
       - window_process: { equals: "Lively" }
         window_class: { regex: "HwndWrapper" }
       - window_title: { equals: "Command Palette" }
+      - window_process: { equals: "VigoMenuV3" }
   - commands: ["set-floating"]
     match:
 
