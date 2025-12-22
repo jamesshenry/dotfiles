@@ -16,4 +16,5 @@ source ~/.config/homebrew/config.nu
 source ~/.config/bat/config.nu
 source ~/.config/yazi/config.nu
 source ~/.config/git/config.nu
+source ~/.config/helix/config.nu
 
