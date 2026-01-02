@@ -12,18 +12,6 @@ if ($null -eq ( Get-Command {{ .cmd }} -ErrorAction SilentlyContinue )) {
 
 {{ end -}}
 
-{{ range .packages.windows.winget -}}
-Write-Host "==> Installing {{ .id -}}..." -ForegroundColor Yellow
-
-if ($null -eq ( Get-Command {{ .cmd }} -ErrorAction SilentlyContinue )) {
-	winget install --id {{ .id }}
-	Write-Host "Done." -ForegroundColor Green
-} else {
-	Write-Host "{{ .id }} already installed." -ForegroundColor Magenta
-}
-
-{{ end -}}
-
 {{ range .packages.crossplatform.rust }}
 Write-Host "==> Installing rust crate: {{ .pkgName -}}..." -ForegroundColor Yellow
 Invoke-Expression {{ .cmd | quote }}
