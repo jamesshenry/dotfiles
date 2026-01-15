@@ -23,3 +23,5 @@
 	safecrlf = false
 [credential "helperselector"]
 	selected = manager
+[init]
+	defaultBranch = main
