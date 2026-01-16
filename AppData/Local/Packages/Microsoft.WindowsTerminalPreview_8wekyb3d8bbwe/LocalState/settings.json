@@ -100,7 +100,7 @@
                 "size": 12
             },
             "intenseTextStyle": "all",
-            "opacity": 100,
+            "opacity": 70,
             "showMarksOnScrollbar": true,
             "useAcrylic": false
         },
