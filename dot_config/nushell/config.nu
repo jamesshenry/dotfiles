@@ -6,8 +6,8 @@ alias hlx = hx -c ~/.config/helix/config.toml
 alias ll = ls -l
 alias lg = lazygit
 alias ff = fastfetch
-source ~/.config/nushell/cmd_ext.nu
 
+source ~/.config/nushell/cmd_ext.nu
 source ~/.config/starship/config.nu
 source ~/.config/zoxide/config.nu
 source ~/.config/atuin/config.nu

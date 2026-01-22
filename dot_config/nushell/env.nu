@@ -22,3 +22,5 @@
 #     $env_vars | reject PATH | load-env
 #     $env.path | append $env_vars.PATH
 # }
+
+$env.HELIX_RUNTIME = "~/scoop/apps/helix-next/current/runtime"
