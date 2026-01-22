@@ -64,8 +64,8 @@ id = "rustup-msvc"
 cmd = "rustup-msvc"
 
 [[packages.windows.scoop]]
-bucket = "main"
-id = "helix"
+bucket = "scoop-bucket"
+id = "helix-next"
 cmd = "hx"
 
 [[packages.windows.scoop]]
@@ -131,21 +131,21 @@ cmd = "vivid"
 
 [packages.linux]
 brews = [
-    "bottom",
-    "git-delta",
-    "dust",
-    "fastfetch",
-    "fd",
-    "gh",
-    "helix",
-    "lazygit",
-    "starship",
-    "typst",
-    "ripgrep",
-    "vivid",
-    "zoxide",
-    "zig",
-    "noborus/tap/ov",
+  "bottom",
+  "git-delta",
+  "dust",
+  "fastfetch",
+  "fd",
+  "gh",
+  "helix",
+  "lazygit",
+  "starship",
+  "typst",
+  "ripgrep",
+  "vivid",
+  "zoxide",
+  "zig",
+  "noborus/tap/ov",
 ]
 apts = ["podman", "dotnet-sdk-9.0"]
 casks = []
