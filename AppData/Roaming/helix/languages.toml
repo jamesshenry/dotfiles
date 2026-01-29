@@ -1,3 +1,5 @@
+use-grammars = { only = ["c-sharp", "xml", "toml"] }
+
 [language-server.csharp]
 command = "csharp-language-server"
 
@@ -12,3 +14,14 @@ name = "toml"
 formatter = { command = "taplo", args = ["format", "-"] }
 auto-format = true
 language-servers = ["taplo"]
+[[language]]
+name = "xml"
+indent = { tab-width = 2, unit = "  " }
+file-types = [
+  "xml",
+  "props",
+  "Build.targets",
+  "Build.user.props",
+  "csproj",
+  "resx",
+]
