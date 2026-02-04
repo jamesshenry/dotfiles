@@ -13,10 +13,12 @@
 	cmd = 'code --wait --merge $REMOTE $LOCAL $BASE $MERGED'
 [diff]
 	external = difft --syntax-highlight=off
+
+[include]
+	path = ~/.config/git/personal.config
+
 [includeIf "gitdir:C:/source/devops/"]
 	path = ~/.config/git/work.config
-[includeIf "gitdir:C:/source/personal/"]
-	path = ~/.config/git/personal.config
 [core]
 	safecrlf = false
 [credential "helperselector"]
