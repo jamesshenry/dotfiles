@@ -1,7 +1,6 @@
 **/cache
 dot_config/chezmoi/chezmoi.toml
 dot_config/nvim
-dot_config/**/history.txt
 {{- if ne .chezmoi.os "windows" }}
 AppData
 dot_config/autohotkey
@@ -13,4 +12,6 @@ dot_config/gh/hosts.yml
 dot_config/nushell/history.txt
 dot_glzr/zebar/tmp-QzpcVXNlcnNcaGVucnlqXC5nbHpyXHplYmFyXHN0YXJ0ZXI=/**
 **/node_modules**/tmp*/
-node_modules
+node_modules/
+bun.lock
+history.txt
