@@ -1,4 +1,3 @@
-Invoke-Expression (& { (zoxide init powershell --cmd cd | Out-String) })
 Invoke-Expression (& { (atuin init powershell | Out-String) })
 Invoke-Expression (& { (starship init powershell | Out-String) })
 
@@ -10,8 +9,5 @@ function Invoke-Starship-PreCommand {
     }
     $host.ui.Write($prompt)
 }
-Set-PSReadLineOption -PredictionSource HistoryAndPlugin
-# Set-PSReadLineOption -Colors @{ InlinePrediction = '#8A0303' }
-Set-PSReadLineOption -PredictionViewStyle InlineView
-
 Set-Alias -Name lg -Value lazygit
+Invoke-Expression (& { (zoxide init powershell --cmd cd | Out-String) })
