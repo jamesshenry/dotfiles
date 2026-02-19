@@ -1,17 +1,30 @@
-**/cache
-dot_config/chezmoi/chezmoi.toml
-dot_config/nvim
+# Cache and temp files
+**/.cache
+**/.DS_Store
+
+# Ignore chezmoi config in home
+.config/chezmoi/chezmoi.toml
+
+# Neovim
+.config/nvim
+
+# Windows-only logic (using Target Names)
 {{- if ne .chezmoi.os "windows" }}
 AppData
-dot_config/autohotkey
+.config/autohotkey
 {{- end }}
-dot_config/nushell/history.txt
 
-dot_config/starship/starship.nu
-dot_config/gh/hosts.yml
-dot_config/nushell/history.txt
-dot_glzr/zebar/tmp-QzpcVXNlcnNcaGVucnlqXC5nbHpyXHplYmFyXHN0YXJ0ZXI=/**
-**/node_modules**/tmp*/
-node_modules/
-bun.lock
+# Shell & Tool configs
+.config/nushell/history.txt
+.config/starship/starship.nu
+.config/gh/hosts.yml
+
+# Specific complex paths
+.glzr/zebar/tmp-QzpcVXNlcnNcaGVucnlqXC5nbHpyXHplYmFyXHN0YXJ0ZXI=/**
+
+# --- THE FIX: Ignore all node_modules everywhere ---
+**/node_modules
+
+# Locks and specific history files
+bun.lockb
 history.txt
