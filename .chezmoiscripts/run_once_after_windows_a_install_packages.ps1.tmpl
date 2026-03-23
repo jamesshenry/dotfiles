@@ -1,21 +1,34 @@
-{{if eq .chezmoi.os "windows" -}}
+{{ if eq .chezmoi.os "windows" -}}
 
-{{ range .packages.windows.scoop -}}
-Write-Host "==> Installing Scoop package: {{ .id }} (from bucket {{ .bucket -}})..." -ForegroundColor Yellow
-
-if ($null -eq ( Get-Command {{ .cmd }} -ErrorAction SilentlyContinue )) {
-	scoop install {{ .bucket }}/{{ .id }}
-	Write-Host "Done." -ForegroundColor Green
-} else {
-	Write-Host "{{ .id }} already installed." -ForegroundColor Magenta
+# Helper to install Scoop package
+function Install-ScoopPackage($id, $cmd) {
+    if ($null -eq $id) { return }
+    if ($null -eq $cmd) { $cmd = $id }
+    
+    Write-Host "==> Checking Scoop package: $id..." -ForegroundColor Yellow
+    if ($null -eq (Get-Command $cmd -ErrorAction SilentlyContinue)) {
+        Write-Host "Installing $id..." -ForegroundColor Yellow
+        scoop install "$id"
+        Write-Host "Done." -ForegroundColor Green
+    } else {
+        Write-Host "$id is already installed." -ForegroundColor Magenta
+    }
 }
 
-{{ end -}}
+# Iterate through all tools
+{{ range $name, $tool := .tools -}}
+    {{ $id := "" }}{{ $cmd := "" }}
+    {{ if $tool.scoop }}
+        {{ if kindOf $tool.scoop | eq "map" }}
+            {{ $id = $tool.scoop.id }}{{ $cmd = $tool.scoop.cmd }}
+        {{ else }}
+            {{ $id = $tool.scoop }}{{ $cmd = $tool.scoop }}
+        {{ end }}
+    {{ else if $tool.all }}
+        {{ $id = $tool.all }}{{ $cmd = $tool.all }}
+    {{ end }}
 
-{{ range .packages.crossplatform.rust }}
-Write-Host "==> Installing rust crate: {{ .pkgName -}}..." -ForegroundColor Yellow
-Invoke-Expression {{ .cmd | quote }}
-Write-Host
+    Install-ScoopPackage "{{ $id }}" "{{ $cmd }}"
 {{ end -}}
 
 {{ end -}}

@@ -1,15 +1,63 @@
 {{ if eq .chezmoi.os "linux" -}}
 #!/bin/bash
 
-brew bundle --no-lock --file=/dev/stdin <<EOF
-{{ range .packages.linux.brews -}}
-brew {{ . | quote }}
-{{ end -}}
-{{ range .packages.linux.casks -}}
-cask {{ . | quote }}
-{{ end -}}
-EOF
-{{ range .packages.linux.apts -}}
-sudo apt-get install -y {{ . | quote }}
-{{ end -}}
+# Detect OS using chezmoi template variables
+{{ if eq .chezmoi.osRelease.id "arch" -}}
+OS="arch"
+INSTALL_CMD="sudo pacman -S --needed --noconfirm"
+{{- else if eq .chezmoi.osRelease.id "debian" "ubuntu" }}
+OS="debian"
+INSTALL_CMD="sudo apt-get install -y"
+{{- else }}
+OS="unknown"
+{{- end }}
+
+echo "Detected OS: $OS"
+
+if [[ "$OS" == "arch" ]]; then
+  # Build list of pacman packages
+  PACMAN_PKGS=()
+  {{ range $name, $tool := .tools -}}
+    {{ if $tool.pacman -}}
+      PACMAN_PKGS+=({{ $tool.pacman | quote }})
+    {{ else if $tool.all -}}
+      PACMAN_PKGS+=({{ $tool.all | quote }})
+    {{ end -}}
+  {{ end -}}
+
+  if [ ${#PACMAN_PKGS[@]} -gt 0 ]; then
+    echo "Installing packages via pacman..."
+    $INSTALL_CMD "${PACMAN_PKGS[@]}"
+  fi
+
+else
+  # On Debian/Ubuntu, continue using brew and apt
+  BREW_PKGS=()
+  APT_PKGS=()
+  
+  {{ range $name, $tool := .tools -}}
+    {{ if $tool.brew -}}
+      BREW_PKGS+=({{ $tool.brew | quote }})
+    {{ else if $tool.all -}}
+      BREW_PKGS+=({{ $tool.all | quote }})
+    {{ end -}}
+
+    {{ if $tool.apt -}}
+      APT_PKGS+=({{ $tool.apt | quote }})
+    {{ end -}}
+  {{ end -}}
+
+  if command -v brew >/dev/null 2>&1; then
+    if [ ${#BREW_PKGS[@]} -gt 0 ]; then
+      echo "Using Homebrew for packages..."
+      brew install "${BREW_PKGS[@]}"
+    fi
+  fi
+
+  if [ ${#APT_PKGS[@]} -gt 0 ]; then
+    echo "Installing packages via apt..."
+    $INSTALL_CMD "${APT_PKGS[@]}"
+  fi
+fi
+
 {{ end -}}
