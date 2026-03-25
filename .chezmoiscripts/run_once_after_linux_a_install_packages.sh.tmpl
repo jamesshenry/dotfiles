@@ -18,10 +18,10 @@ if [[ "$OS" == "arch" ]]; then
   # Build list of pacman packages
   PACMAN_PKGS=()
   {{ range $name, $tool := .tools -}}
-    {{ if $tool.pacman -}}
-      PACMAN_PKGS+=({{ $tool.pacman | quote }})
-    {{ else if $tool.all -}}
-      PACMAN_PKGS+=({{ $tool.all | quote }})
+    {{ if index $tool "pacman" -}}
+      PACMAN_PKGS+=({{ index $tool "pacman" | quote }})
+    {{ else if index $tool "all" -}}
+      PACMAN_PKGS+=({{ index $tool "all" | quote }})
     {{ end -}}
   {{ end -}}
 
