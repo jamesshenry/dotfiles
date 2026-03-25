@@ -2,7 +2,7 @@
 #!/bin/bash
 
 # Detect OS using chezmoi template variables
-{{ if eq .chezmoi.osRelease.id "arch" -}}
+{{ if or (eq .chezmoi.osRelease.id "arch") (eq .chezmoi.osRelease.id "endeavouros") -}}
 OS="arch"
 INSTALL_CMD="sudo pacman -S --needed --noconfirm"
 {{- else if eq .chezmoi.osRelease.id "debian" "ubuntu" }}

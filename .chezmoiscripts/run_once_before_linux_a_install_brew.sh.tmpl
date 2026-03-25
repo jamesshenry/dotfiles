@@ -2,8 +2,8 @@
 #!/bin/bash
 
 # Skip if running on Arch Linux (pacman should be enough)
-{{ if eq .chezmoi.osRelease.id "arch" -}}
-echo "Arch Linux detected via os-release. Skipping Homebrew installation."
+{{ if or (eq .chezmoi.osRelease.id "arch") (eq .chezmoi.osRelease.id "endeavouros") -}}
+echo "Arch derivative detected ({{ .chezmoi.osRelease.id }}). Skipping Homebrew installation."
 exit 0
 {{- end }}
 
@@ -23,5 +23,8 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 echo "Installing brew dependencies..."
 sudo apt-get update && sudo apt-get install -y build-essential
-/home/linuxbrew/.linuxbrew/bin/brew install gcc
+
+# Re-eval shellenv to ensure brew is in path for the current shell session
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+brew install gcc
 {{ end -}}
