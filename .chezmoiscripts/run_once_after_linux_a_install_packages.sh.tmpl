@@ -36,14 +36,14 @@ else
   APT_PKGS=()
   
   {{ range $name, $tool := .tools -}}
-    {{ if $tool.brew -}}
-      BREW_PKGS+=({{ $tool.brew | quote }})
-    {{ else if $tool.all -}}
-      BREW_PKGS+=({{ $tool.all | quote }})
+    {{ if index $tool "brew" -}}
+      BREW_PKGS+=({{ index $tool "brew" | quote }})
+    {{ else if index $tool "all" -}}
+      BREW_PKGS+=({{ index $tool "all" | quote }})
     {{ end -}}
 
-    {{ if $tool.apt -}}
-      APT_PKGS+=({{ $tool.apt | quote }})
+    {{ if index $tool "apt" -}}
+      APT_PKGS+=({{ index $tool "apt" | quote }})
     {{ end -}}
   {{ end -}}
 
