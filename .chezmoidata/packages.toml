@@ -56,3 +56,8 @@ tacky-borders = { scoop = "tacky-borders" }
 unigetui = { scoop = { id = "unigetui", cmd = "UniGetUI" } }
 yasb = { scoop = "yasb" }
 zebar = { scoop = "zebar" }
+
+# Arch btw
+rofi = { pacman = "yay" }
+bitwarden = { pacman = "bitwarden" }
+bitwarden-cli = { pacman = "bitwarden-cli" }
