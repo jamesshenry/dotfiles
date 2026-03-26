@@ -1,1 +1,2 @@
 keybind = global:cmd+backquote=toggle_quick_terminal
+quick-terminal-size = 40%
