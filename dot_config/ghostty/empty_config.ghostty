@@ -1,1 +1,1 @@
-keybind = global:super+`=toggle_quick_terminal
+keybind = global:super+backquote=toggle_quick_terminal
