@@ -18,7 +18,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias lg='lazygit'
-alias hx = 'helix -c ~/.config/helix/config.toml'
+alias hx='helix -c ~/.config/helix/config.toml'
 
 # User specific environment and startup programs
 
