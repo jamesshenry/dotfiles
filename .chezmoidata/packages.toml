@@ -1,5 +1,4 @@
 [tools]
-rofi = { pacman = "rofi" }
 # Universal / Multi-platform tools
 #7zip = { all = "7zip" }
 #act = { all = "act" }
