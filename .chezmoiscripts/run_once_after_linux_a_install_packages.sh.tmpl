@@ -20,7 +20,8 @@ if [[ "$OS" == "arch" ]]; then
   {{ range $name, $tool := .tools -}}
     {{ if index $tool "pacman" -}}
       PACMAN_PKGS+=({{ index $tool "pacman" | quote }})
-    {{ else if index $tool "all" -}}
+    {{ end -}}
+    {{ if index $tool "all" -}}
       PACMAN_PKGS+=({{ index $tool "all" | quote }})
     {{ end -}}
   {{ end -}}

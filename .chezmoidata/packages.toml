@@ -1,63 +1,62 @@
 [tools]
+rofi = { pacman = "rofi" }
 # Universal / Multi-platform tools
-7zip = { all = "7zip" }
-act = { all = "act" }
-atuin = { all = "atuin" }
-bat = { all = "bat" }
-biome = { all = "biome" }
-bottom = { all = "bottom" }
-bruno = { all = "bruno" }
-cartero = { all = "cartero" }
-chezmoi = { all = "chezmoi" }
-dart = { all = "dart" }
-difftastic = { all = "difftastic" }
-discord = { all = "discord" }
-dotnet-sdk = { all = "dotnet-sdk" }
-dust = { all = "dust" }
-fastfetch = { all = "fastfetch" }
-fd = { all = "fd" }
-fzf = { all = "fzf" }
-git = { all = "git" }
-helix = { all = "helix" }
-jq = { all = "jq" }
-lazygit = { all = "lazygit" }
-obsidian = { all = "obsidian" }
-opencode = { all = "opencode" }
-podman = { all = "podman" }
-ripgrep = { all = "ripgrep" }
-rustup = { all = "rustup" }
-scc = { all = "scc" }
-starship = { all = "starship" }
-tailwindcss = { all = "tailwindcss" }
-taplo = { all = "taplo" }
-typst = { all = "typst" }
-vivid = { all = "vivid" }
-volta = { scoop = "volta" }
-yazi = { all = "yazi" }
-zig = { all = "zig" }
-zoxide = { all = "zoxide" }
+#7zip = { all = "7zip" }
+#act = { all = "act" }
+#atuin = { all = "atuin" }
+#bat = { all = "bat" }
+#biome = { all = "biome" }
+#bottom = { all = "bottom" }
+#bruno = { all = "bruno" }
+#cartero = { all = "cartero" }
+#chezmoi = { all = "chezmoi" }
+#dart = { all = "dart" }
+#difftastic = { all = "difftastic" }
+#discord = { all = "discord" }
+#dotnet-sdk = { all = "dotnet-sdk" }
+#dust = { all = "dust" }
+#fastfetch = { all = "fastfetch" }
+#fd = { all = "fd" }
+#fzf = { all = "fzf" }
+#git = { all = "git" }
+#helix = { all = "helix" }
+#jq = { all = "jq" }
+#lazygit = { all = "lazygit" }
+#obsidian = { all = "obsidian" }
+#opencode = { all = "opencode" }
+#podman = { all = "podman" }
+#ripgrep = { all = "ripgrep" }
+#rustup = { all = "rustup" }
+#scc = { all = "scc" }
+#starship = { all = "starship" }
+#tailwindcss = { all = "tailwindcss" }
+#taplo = { all = "taplo" }
+#typst = { all = "typst" }
+#vivid = { all = "vivid" }
+#volta = { scoop = "volta" }
+#yazi = { all = "yazi" }
+#zig = { all = "zig" }
+#zoxide = { all = "zoxide" }
 
 # Mapped / Naming differences
-gh = { all = "gh", pacman = "github-cli" }
-delta = { all = "delta", brew = "git-delta", pacman = "git-delta" }
-ov = { all = "ov", brew = "noborus/tap/ov" }
+#gh = { all = "gh", pacman = "github-cli" }
+#delta = { all = "delta", brew = "git-delta", pacman = "git-delta" }
+#ov = { all = "ov", brew = "noborus/tap/ov" }
 
 # Windows Specific (Scoop)
-gsudo = { scoop = "gsudo" }
+#gsudo = { scoop = "gsudo" }
 sourcegit = { scoop = "sourcegit" }
 dark = { scoop = "dark" }
 everything = { scoop = "everything" }
 glazewm = { scoop = "glazewm" }
 innounp = { scoop = "innounp" }
-nuget-package-explorer = { scoop = { id = "nuget-package-explorer", cmd = "NuGetPackageExplorer" } }
 postgrestools = { scoop = "postgrestools" }
 scoop-search = { scoop = "scoop-search" }
 tacky-borders = { scoop = "tacky-borders" }
-unigetui = { scoop = { id = "unigetui", cmd = "UniGetUI" } }
 yasb = { scoop = "yasb" }
 zebar = { scoop = "zebar" }
 
 # Arch btw
-rofi = { pacman = "yay" }
 bitwarden = { pacman = "bitwarden" }
 bitwarden-cli = { pacman = "bitwarden-cli" }
+rofi = { pacman = "rofi" }
