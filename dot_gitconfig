@@ -1,6 +1,8 @@
 [core]
-	autocrlf = true
+	autocrlf = input
 	editor = code --wait
+[includeIf "gitdir/i:C:/"]
+	path = .gitconfig.windows
 [push]
 	default = current
 	autoSetupRemote = true
