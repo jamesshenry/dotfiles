@@ -22,12 +22,12 @@
 #jq = { all = "jq" }
 #lazygit = { all = "lazygit" }
 #obsidian = { all = "obsidian" }
-#opencode = { all = "opencode" }
-#podman = { all = "podman" }
-#ripgrep = { all = "ripgrep" }
+opencode = { all = "opencode" }
+podman = { all = "podman" }
+ripgrep = { all = "ripgrep" }
 #rustup = { all = "rustup" }
 #scc = { all = "scc" }
-#starship = { all = "starship" }
+starship = { all = "starship" }
 #tailwindcss = { all = "tailwindcss" }
 #taplo = { all = "taplo" }
 #typst = { all = "typst" }
@@ -38,7 +38,7 @@
 #zoxide = { all = "zoxide" }
 
 # Mapped / Naming differences
-#gh = { all = "gh", pacman = "github-cli" }
+gh = { all = "gh", pacman = "github-cli" }
 #delta = { all = "delta", brew = "git-delta", pacman = "git-delta" }
 #ov = { all = "ov", brew = "noborus/tap/ov" }
 

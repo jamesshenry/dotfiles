@@ -20,6 +20,7 @@ AppData
 .config/nushell/history.txt
 .config/starship/starship.nu
 .config/gh/hosts.yml
+.config/opencode/package.json
 
 # Specific complex paths
 .glzr/zebar/tmp-QzpcVXNlcnNcaGVucnlqXC5nbHpyXHplYmFyXHN0YXJ0ZXI=/**
