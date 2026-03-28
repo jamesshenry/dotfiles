@@ -51,3 +51,4 @@ if command -v hx >/dev/null 2>&1; then
     export VISUAL='hx'
 fi
 eval "$(zellij setup --generate-auto-start bash)"
+[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
