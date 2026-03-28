@@ -50,3 +50,4 @@ if command -v hx >/dev/null 2>&1; then
     export EDITOR='hx'
     export VISUAL='hx'
 fi
+eval "$(zellij setup --generate-auto-start bash)"

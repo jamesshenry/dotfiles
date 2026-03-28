@@ -2,21 +2,20 @@
 # Universal / Multi-platform tools
 #7zip = { all = "7zip" }
 #act = { all = "act" }
-#atuin = { all = "atuin" }
-#bat = { all = "bat" }
+atuin = { all = "atuin" }
+bat = { all = "bat" }
 #biome = { all = "biome" }
-#bottom = { all = "bottom" }
+bottom = { all = "bottom" }
 #bruno = { all = "bruno" }
 #cartero = { all = "cartero" }
-#chezmoi = { all = "chezmoi" }
 #dart = { all = "dart" }
 #difftastic = { all = "difftastic" }
-#discord = { all = "discord" }
+discord = { all = "discord" }
 #dotnet-sdk = { all = "dotnet-sdk" }
-#dust = { all = "dust" }
-#fastfetch = { all = "fastfetch" }
-#fd = { all = "fd" }
-#fzf = { all = "fzf" }
+dust = { all = "dust" }
+fastfetch = { all = "fastfetch" }
+fd = { all = "fd" }
+fzf = { all = "fzf" }
 #git = { all = "git" }
 #helix = { all = "helix" }
 #jq = { all = "jq" }
@@ -31,14 +30,14 @@ starship = { all = "starship" }
 #tailwindcss = { all = "tailwindcss" }
 #taplo = { all = "taplo" }
 #typst = { all = "typst" }
-#vivid = { all = "vivid" }
+vivid = { all = "vivid" }
 #volta = { scoop = "volta" }
 #yazi = { all = "yazi" }
 #zig = { all = "zig" }
-#zoxide = { all = "zoxide" }
+zoxide = { all = "zoxide" }
 
 # Mapped / Naming differences
-gh = { all = "gh", pacman = "github-cli" }
+gh = { pacman = "github-cli", scoop = "gh" }
 #delta = { all = "delta", brew = "git-delta", pacman = "git-delta" }
 #ov = { all = "ov", brew = "noborus/tap/ov" }
 
@@ -59,3 +58,4 @@ zebar = { scoop = "zebar" }
 bitwarden = { pacman = "bitwarden" }
 bitwarden-cli = { pacman = "bitwarden-cli" }
 rofi = { pacman = "rofi" }
+cascadia-code = { pacman = "ttf-cascadia-code" }
