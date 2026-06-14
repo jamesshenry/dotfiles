@@ -2,60 +2,85 @@
 # Universal / Multi-platform tools
 #7zip = { all = "7zip" }
 #act = { all = "act" }
-atuin = { all = "atuin" }
-bat = { all = "bat" }
+
+atuin = "atuin"
+bat = "bat"
 #biome = { all = "biome" }
-bottom = { all = "bottom" }
+
+bottom = "bottom"
+
 #bruno = { all = "bruno" }
 #cartero = { all = "cartero" }
 #dart = { all = "dart" }
 #difftastic = { all = "difftastic" }
-discord = { all = "discord" }
+
+discord = "discord"
+
 #dotnet-sdk = { all = "dotnet-sdk" }
-dust = { all = "dust" }
-fastfetch = { all = "fastfetch" }
-fd = { all = "fd" }
-fzf = { all = "fzf" }
+
+dust = "dust"
+
+fastfetch = "fastfetch"
+
+fd = "fd"
+
+fzf = "fzf"
+
 #git = { all = "git" }
 #helix = { all = "helix" }
 #jq = { all = "jq" }
 #lazygit = { all = "lazygit" }
 #obsidian = { all = "obsidian" }
-opencode = { all = "opencode" }
-podman = { all = "podman" }
-ripgrep = { all = "ripgrep" }
+
+opencode = "opencode"
+
+podman = "podman"
+
+ripgrep = "ripgrep"
+
 #rustup = { all = "rustup" }
 #scc = { all = "scc" }
-starship = { all = "starship" }
+
+starship = "starship"
+
 #tailwindcss = { all = "tailwindcss" }
 #taplo = { all = "taplo" }
 #typst = { all = "typst" }
-vivid = { all = "vivid" }
+
+vivid = "vivid"
+
 #volta = { scoop = "volta" }
 #yazi = { all = "yazi" }
 #zig = { all = "zig" }
-zoxide = { all = "zoxide" }
+
+zoxide = "zoxide"
 
 # Mapped / Naming differences
-gh = { pacman = "github-cli", scoop = "gh" }
+
+[tools.gh]
+pacman = "github-cli"
+scoop = "gh"
+
 #delta = { all = "delta", brew = "git-delta", pacman = "git-delta" }
 #ov = { all = "ov", brew = "noborus/tap/ov" }
 
 # Windows Specific (Scoop)
 #gsudo = { scoop = "gsudo" }
-sourcegit = { scoop = "sourcegit" }
-dark = { scoop = "dark" }
-everything = { scoop = "everything" }
-glazewm = { scoop = "glazewm" }
-innounp = { scoop = "innounp" }
-postgrestools = { scoop = "postgrestools" }
-scoop-search = { scoop = "scoop-search" }
-tacky-borders = { scoop = "tacky-borders" }
-yasb = { scoop = "yasb" }
-zebar = { scoop = "zebar" }
+
+sourcegit = "sourcegit"
+dark = "dark"
+everything = "everything"
+glazewm = "glazewm"
+innounp = "innounp"
+postgrestools = "postgrestools"
+scoop-search = "scoop-search"
+tacky-borders = "tacky-borders"
+yasb = "yasb"
+zebar = "zebar"
 
 # Arch btw
-bitwarden = { pacman = "bitwarden" }
-bitwarden-cli = { pacman = "bitwarden-cli" }
-rofi = { pacman = "rofi" }
-cascadia-code = { pacman = "ttf-cascadia-code" }
+
+bitwarden = "bitwarden"
+bitwarden-cli = "bitwarden-cli"
+rofi = "rofi"
+cascadia-code = "ttf-cascadia-code"
