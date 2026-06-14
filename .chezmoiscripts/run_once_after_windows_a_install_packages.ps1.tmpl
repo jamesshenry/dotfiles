@@ -18,14 +18,19 @@ function Install-ScoopPackage($id, $cmd) {
 # Iterate through all tools
 {{ range $name, $tool := .tools -}}
     {{ $id := "" }}{{ $cmd := "" }}
-    {{ if $tool.scoop }}
-        {{ if kindOf $tool.scoop | eq "map" }}
-            {{ $id = $tool.scoop.id }}{{ $cmd = $tool.scoop.cmd }}
-        {{ else }}
-            {{ $id = $tool.scoop }}{{ $cmd = $tool.scoop }}
+    {{ if eq (kindOf $tool) "string" }}
+        {{ $id = $tool }}{{ $cmd = $tool }}
+    {{ else if eq (kindOf $tool) "map" }}
+        {{ if hasKey $tool "scoop" }}
+            {{ $s := index $tool "scoop" }}
+            {{ if eq (kindOf $s) "map" }}
+                {{ $id = index $s "id" }}{{ $cmd = index $s "cmd" }}
+            {{ else }}
+                {{ $id = $s }}{{ $cmd = $s }}
+            {{ end }}
+        {{ else if hasKey $tool "all" }}
+            {{ $id = index $tool "all" }}{{ $cmd = index $tool "all" }}
         {{ end }}
-    {{ else if $tool.all }}
-        {{ $id = $tool.all }}{{ $cmd = $tool.all }}
     {{ end }}
 
     Install-ScoopPackage "{{ $id }}" "{{ $cmd }}"
