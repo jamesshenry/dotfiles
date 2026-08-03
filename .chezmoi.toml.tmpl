@@ -1,10 +1,31 @@
-[data]
-  email = "a@example.com"
+# ~/.local/share/chezmoi/.chezmoi.toml.tmpl
 
-[git]
-autoCommit = true
-autoPush = true
+{{/* Prompt for email and name if they aren't already set */}}
+{{- $email := promptStringOnce . "email" "What is your email address?" -}}
+{{- $name := promptStringOnce . "name" "What is your full name?" -}}
+
+{{/* Ask if this is a work machine (returns a boolean) */}}
+{{- $is_work := promptBoolOnce . "is_work" "Is this a work machine?" -}}
+
+{{/* Auto-detect the operating system */}}
+{{- $osID := .chezmoi.os -}}
+
+[data]
+    email = {{ $email | quote }}
+    name = {{ $name | quote }}
+    is_work = {{ $is_work }}
+    osid = {{ $osID | quote }}
 
 [edit]
-    command = "hx"
-    args = ["-c", "~/.config/helix/config.toml"]
+    command = "code"
+    args = ["--wait"]
+
+{{/* Conditional configuration based on the OS */}}
+{{- if eq .chezmoi.os "windows" }}
+[cd]
+    command = "pwsh"
+{{- else if eq .chezmoi.os "darwin" }}
+[merge]
+    command = "opendiff"
+{{- end }}
+
