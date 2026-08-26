@@ -1,19 +1,16 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema-preview",
-    "actions":
-    [
+    "actions": [
         {
-            "command":
-            {
+            "command": {
                 "action": "globalSummon",
                 "monitor": "any"
             },
             "id": "User.MyGlobalSummon"
         },
         {
-            "command":
-            {
+            "command": {
                 "action": "switchToTab",
                 "index": 0
             },
@@ -24,16 +21,14 @@
             "id": "User.paste"
         },
         {
-            "command":
-            {
+            "command": {
                 "action": "copy",
                 "singleLine": false
             },
             "id": "User.copy.644BA8F2"
         },
         {
-            "command":
-            {
+            "command": {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
@@ -54,23 +49,20 @@
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
     "initialCols": 120,
     "initialRows": 30,
-    "keybindings":
-    [
+    "keybindings": [
         {
             "id": "User.MyGlobalSummon",
             "keys": "win+`"
         }
     ],
     "minimizeToNotificationArea": false,
-    "newTabMenu":
-    [
+    "newTabMenu": [
         {
             "type": "remainingProfiles"
         },
         {
             "allowEmpty": false,
-            "entries":
-            [
+            "entries": [
                 {
                     "commandline": null,
                     "name": null,
@@ -84,17 +76,15 @@
             "type": "folder"
         }
     ],
-    "profiles":
-    {
-        "defaults":
-        {
+    "profiles": {
+        "defaults": {
+            "experimental.connection.passthroughMode": true,
             "adjustIndistinguishableColors": "indexed",
             "backgroundImageAlignment": "bottomRight",
             "backgroundImageStretchMode": "none",
             "closeOnExit": "graceful",
             "colorScheme": "Elementary",
-            "font":
-            {
+            "font": {
                 "axes": {},
                 "face": "Cascadia Code NF",
                 "size": 12
@@ -103,8 +93,7 @@
             "showMarksOnScrollbar": true,
             "useAcrylic": false
         },
-        "list":
-        [
+        "list": [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -185,8 +174,7 @@
             }
         ]
     },
-    "schemes":
-    [
+    "schemes": [
         {
             "background": "#F2F2F2",
             "black": "#5C5F77",
