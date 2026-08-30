@@ -9,9 +9,10 @@ if (Get-Module -ListAvailable PSReadLine) {
 Invoke-Expression (& { (atuin init powershell | Out-String) })
 
 Set-Alias -Name lg -Value lazygit
-function prompt {
-    prmt --code $LASTEXITCODE '{path:cyan:s} {git:purple:s:on :} {ok:green}{fail:red} '
-}
+
+# function prompt {
+#     prmt --code $LASTEXITCODE '{path:cyan:s} {git:purple:s:on :} {ok:green}{fail:red} '
+# }
 
 Invoke-Expression (&starship init powershell)
 
