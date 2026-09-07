@@ -1,0 +1,77 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "sticky_scroll": {
+    "enabled": false
+  },
+  "line_ending": "detect",
+  "format_on_save": "on",
+  "bottom_dock_layout": "contained",
+  "auto_update": false,
+  "project_panel": {
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "git_panel": {
+    "dock": "left"
+  },
+  "terminal": {
+    "bell": "system",
+    "font_family": "Cascadia Code",
+    "blinking": "on",
+    "copy_on_select": true
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "base_keymap": "VSCode",
+  "tabs": {
+    "close_position": "left"
+  },
+  "relative_line_numbers": "enabled",
+  "vertical_scroll_margin": 5.0,
+  "gutter": {
+    "line_numbers": true
+  },
+  "minimap": {
+    "show": "never"
+  },
+  "current_line_highlight": "gutter",
+  "cursor_blink": true,
+  "max_tabs": 5,
+  "use_system_path_prompts": false,
+  "autosave": "on_window_change",
+  "buffer_font_family": "Cascadia Code NF",
+  "file_types": {
+    "jsonc": [
+      "*.nswag"
+    ]
+  },
+  "show_whitespaces": "trailing",
+  "ensure_final_newline_on_save": true,
+  "preferred_line_length": 200,
+  "ui_font_size": 16,
+  "buffer_font_size": 13.0,
+  "theme": {
+    "mode": "system",
+    "light": "Ayu Light",
+    "dark": "Ayu Dark"
+  }
+}
