@@ -88,6 +88,7 @@
     {
         "defaults":
         {
+          "experimental.connection.passthroughMode": true,
             "adjustIndistinguishableColors": "indexed",
             "backgroundImageAlignment": "bottomRight",
             "backgroundImageStretchMode": "none",
