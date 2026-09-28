@@ -7,6 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "icon_theme": "Material Icon Theme",
   "sticky_scroll": {
     "enabled": false
   },
@@ -71,7 +72,7 @@
   "buffer_font_size": 13.0,
   "theme": {
     "mode": "system",
-    "light": "Ayu Light",
-    "dark": "Ayu Dark"
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Frappé"
   }
 }
