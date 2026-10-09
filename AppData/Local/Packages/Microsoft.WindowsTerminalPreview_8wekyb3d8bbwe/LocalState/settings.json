@@ -12,16 +12,16 @@
             "id": "User.MyGlobalSummon"
         },
         {
+            "command": "paste",
+            "id": "User.paste"
+        },
+        {
             "command":
             {
                 "action": "switchToTab",
                 "index": 0
             },
             "id": "User.switchToTab.D3F0B923"
-        },
-        {
-            "command": "paste",
-            "id": "User.paste"
         },
         {
             "command":
@@ -32,6 +32,10 @@
             "id": "User.copy.644BA8F2"
         },
         {
+            "command": "find",
+            "id": "User.find"
+        },
+        {
             "command":
             {
                 "action": "splitPane",
@@ -39,10 +43,6 @@
                 "splitMode": "duplicate"
             },
             "id": "User.splitPane.A6751878"
-        },
-        {
-            "command": "find",
-            "id": "User.find"
         }
     ],
     "alwaysOnTop": false,
@@ -88,7 +88,6 @@
     {
         "defaults":
         {
-          "experimental.connection.passthroughMode": true,
             "adjustIndistinguishableColors": "indexed",
             "backgroundImageAlignment": "bottomRight",
             "backgroundImageStretchMode": "none",
@@ -101,6 +100,7 @@
                 "size": 12
             },
             "intenseTextStyle": "all",
+            "opacity": 82,
             "showMarksOnScrollbar": true,
             "useAcrylic": false
         },
@@ -143,54 +143,16 @@
                 "name": "ssh root@Proxmox VE"
             },
             {
-                "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+                "guid": "{b3d59d00-ea2c-5bcf-88fd-a1d6ef07d562}",
                 "hidden": false,
-                "name": "Git Bash",
-                "source": "Git"
-            },
-            {
-                "guid": "{f4ccc592-fb3a-5527-9747-24336677c54a}",
-                "hidden": false,
-                "name": "Developer Command Prompt for VS 2022",
+                "name": "Developer Command Prompt for VS 18",
                 "source": "Windows.Terminal.VisualStudio"
             },
             {
-                "guid": "{66820e53-bf0a-5be7-a8f7-8c29a9b80bac}",
+                "guid": "{8548c8c4-7f01-5b56-ad53-5e50ad7f3f1a}",
                 "hidden": false,
-                "name": "Developer PowerShell for VS 2022",
+                "name": "Developer PowerShell for VS 18",
                 "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{47302f9c-1ac4-566c-aa3e-8cf29889d6ab}",
-                "hidden": false,
-                "name": "Nushell",
-                "source": "nu"
-            },
-            {
-                "guid": "{ded305e3-9485-50a5-a596-a79fa13a1aba}",
-                "hidden": false,
-                "name": "Ubuntu",
-                "source": "Microsoft.WSL"
-            },
-            {
-                "guid": "{e44aca24-a8ee-58c6-83c8-48b7d4a63706}",
-                "hidden": false,
-                "name": "podman-machine-default",
-                "source": "Microsoft.WSL"
-            },
-            {
-                "guid": "{f5aaa1c4-c046-54dd-b188-20cbf6ab07bf}",
-                "hidden": false,
-                "name": "SSH - bpi    #Added by lazyssh",
-                "source": "Windows.Terminal.SSH"
-            },
-            {
-                "commandline": "pwsh.exe -noe -c \"&{Import-Module \"\"\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\Common7\\Tools\\Microsoft.VisualStudio.DevShell.dll\"\"\"; Enter-VsDevShell 7fde9912}\"",
-                "guid": "{7add8b02-43af-444f-8043-75ed0d122705}",
-                "hidden": false,
-                "icon": "ms-appx:///ProfileIcons/vs-pwsh.png",
-                "name": "Developer PowerShell for VS 2019",
-                "startingDirectory": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools"
             }
         ]
     },
@@ -249,6 +211,5 @@
     "theme": "system",
     "themes": [],
     "useAcrylicInTabRow": true,
-    "warning.confirmCloseAllTabs": false,
     "windowingBehavior": "useAnyExisting"
 }
