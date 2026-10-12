@@ -12,16 +12,16 @@
             "id": "User.MyGlobalSummon"
         },
         {
-            "command": "paste",
-            "id": "User.paste"
-        },
-        {
             "command":
             {
                 "action": "switchToTab",
                 "index": 0
             },
             "id": "User.switchToTab.D3F0B923"
+        },
+        {
+            "command": "paste",
+            "id": "User.paste"
         },
         {
             "command":
@@ -32,10 +32,6 @@
             "id": "User.copy.644BA8F2"
         },
         {
-            "command": "find",
-            "id": "User.find"
-        },
-        {
             "command":
             {
                 "action": "splitPane",
@@ -43,9 +39,13 @@
                 "splitMode": "duplicate"
             },
             "id": "User.splitPane.A6751878"
+        },
+        {
+            "command": "find",
+            "id": "User.find"
         }
     ],
-    "alwaysOnTop": false,
+    "alwaysOnTop": true,
     "alwaysShowNotificationIcon": true,
     "autoHideWindow": false,
     "centerOnLaunch": true,
@@ -57,8 +57,100 @@
     "keybindings":
     [
         {
-            "id": "User.MyGlobalSummon",
-            "keys": "win+`"
+            "id": null,
+            "keys": "ctrl+shift+w"
+        },
+        {
+            "id": "Terminal.ScrollDown",
+            "keys": "ctrl+alt+shift+down"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+end"
+        },
+        {
+            "id": "Terminal.ClosePane",
+            "keys": "ctrl+alt+shift+w"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+down"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+t"
+        },
+        {
+            "id": "Terminal.ScrollDownPage",
+            "keys": "ctrl+alt+shift+pgdn"
+        },
+        {
+            "id": "Terminal.OpenNewTab",
+            "keys": "ctrl+alt+shift+t"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+up"
+        },
+        {
+            "id": "Terminal.ScrollToTop",
+            "keys": "ctrl+alt+shift+home"
+        },
+        {
+            "id": "Terminal.ScrollUp",
+            "keys": "ctrl+alt+shift+up"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+pgup"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+pgdn"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+space"
+        },
+        {
+            "id": "Terminal.ScrollUpPage",
+            "keys": "ctrl+alt+shift+pgup"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+home"
+        },
+        {
+            "id": "Terminal.SelectAll",
+            "keys": "ctrl+alt+shift+a"
+        },
+        {
+            "id": "Terminal.ScrollToBottom",
+            "keys": "ctrl+alt+shift+end"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+a"
+        },
+        {
+            "id": "Terminal.ClearBuffer",
+            "keys": "ctrl+alt+shift+k"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+comma"
+        },
+        {
+            "id": "Terminal.OpenSettingsFile",
+            "keys": "ctrl+alt+shift+comma"
+        },
+        {
+            "id": "Terminal.OpenNewTabDropdown",
+            "keys": "ctrl+alt+shift+space"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+k"
         }
     ],
     "minimizeToNotificationArea": false,
@@ -153,6 +245,12 @@
                 "hidden": false,
                 "name": "Developer PowerShell for VS 18",
                 "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{620f6509-1aaa-5e66-b5d1-b472e5d6292c}",
+                "hidden": false,
+                "name": "podman-machine-default",
+                "source": "Microsoft.WSL"
             }
         ]
     },
