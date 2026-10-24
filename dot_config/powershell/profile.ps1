@@ -14,7 +14,13 @@ Set-Alias -Name lg -Value lazygit
 #     prmt --code $LASTEXITCODE '{path:cyan:s} {git:purple:s:on :} {ok:green}{fail:red} '
 # }
 
+function Invoke-Starship-TransientFunction {
+  &starship module character
+}
+
 Invoke-Expression (&starship init powershell)
+
+Enable-TransientPrompt
 
 Invoke-Expression (& { (zoxide init powershell --cmd cd | Out-String) })
 
